@@ -3607,6 +3607,124 @@ răng, cái này không.
 
 ---
 
+## CHÍN ĐIỀU BẤT KHẢ SỬA — GOM VÀ GỌI TÊN (9.99.90)
+
+Theo **HIẾN PHÁP GITA 365 — văn bản gốc**, Chương II Điều 5. Kho
+`G.HP9_BATKHASUA` (9) · `G.HP9_LUAT` (8) · `G.HP9_CHOCHU` (2); bộ kiểm
+**mục 99**. Không dựng răng nào mới.
+
+### Hai văn bản Hiến pháp KHÔNG mâu thuẫn — chúng ở hai tầng
+
+9.99.88 nêu đây là *"chỗ nặng nhất"* và ngờ kho đang thi hành sai bản.
+Đọc đủ Chương II rồi đối chiếu từng điều thì **không phải**:
+
+| | Là gì |
+|---|---|
+| `BN_HIENPHAP` 13 điều | hiến pháp **VẬN HÀNH AI** — bộ não trả lời thế nào |
+| Chín điều này | hiến pháp **TỔ CHỨC** — Học viện được làm gì với gia đình |
+
+Chồng lấn đúng hai chỗ (Điều 13 ẩn danh ↔ điều 8 vòng đỏ; Điều 2 Đứa
+trẻ ↔ điều 7 phủ quyết ảnh), và cả hai chỗ nói **cùng một hướng**.
+
+### Bảy điều đã có răng — nhưng không chỗ nào gọi chúng là bất khả sửa
+
+| Điều | Răng đã có |
+|---|---|
+| 1 không xếp hạng gia đình | `LR1` · `VIP_CAM C1` · `KHONG_XEP_HANG` |
+| 2 chấm NHÀ không chấm NGƯỜI | `LR1` · ngăn `TRE` của `VIP_PHAMVI` |
+| 3 không tụt cấp | `L02` — cổng ở **chỗ GHI**, trước `INSERT` |
+| 4 không hứa kết quả | `QC3 CUM_CAM_KET` · `S5` khai là phép chiếu |
+| 7 trẻ phủ quyết ảnh | `L07` — **hai mã** `CHUAHOI` · `CONTUCHOI` |
+| 8 vòng đỏ không rời máy | `L04` — nhưng **còn hở**, xem dưới |
+| 9 không giữ chân | `L08` · `F2` khai `vaLuat:L08` |
+
+> **Một luật bất khả sửa mà không ai biết nó bất khả sửa thì nó sửa
+> được.** Người sửa `L02` sáu tháng nữa đọc chú giải của L02 — *"không
+> mã nào giảm cấp hiện tại"* — thấy hợp lý, và **không biết rằng sửa nó
+> là lập ra một tổ chức khác**. Chính văn bản gốc viết câu ấy.
+
+Nên bản này **GOM, không chép**. Dựng răng thứ hai cho một điều đã có
+răng là bản thứ hai của một **BẢNG CẤM** — bản nguy nhất trong mọi bản
+thứ hai (9.99.83). Mục 99 canh rằng `HP9_*` không mọc bảng riêng, và
+mọi ô `rangO` trỏ vào **mã có thật**.
+
+### Hai điều chưa có răng — và điều 6 gắt nhất
+
+**Điều 5 · không dùng nỗi sợ của cha mẹ.** Bộ lọc quảng cáo bảy mục
+chặn từ tuyệt đối · so sánh · cam kết · số không nguồn — **không mục
+nào dò lời doạ**. Khi dựng: thêm `QC8` vào bộ lọc đã có, dấu hiệu là
+**cụm nhiều âm tiết** (*"muộn mất rồi"* · *"con nhà người ta"*), không
+dò `sợ` trần — nó nằm cả trong chính câu cấm này. Điều này cấm **cả hai
+chiều**, và chiều *động viên* dễ lọt hơn: một câu doạ để thúc cha mẹ
+giữ nhịp nghe như quan tâm.
+
+**Điều 6 · không lấy tuyến dưới làm nguồn thu.** Kho có `traHoaHong` và
+trần 10%, nhưng **không cửa nào canh hình đa cấp**. Cái đo được là **ĐỘ
+SÂU**: chỉ trả cho lượt giới thiệu trực tiếp; cửa nào nhận ô `tuyenTren`
+/ `capDuoi` là đỏ.
+
+> Điều 6 là điều **DUY NHẤT có động cơ TIỀN đứng sau**. Tám điều kia
+> phạm vì vô ý; điều này phạm vì nó **sinh ra tiền** — nên nó cần răng
+> chắc nhất, không phải lời dặn.
+
+**Điều 8 còn hở nửa sau.** Răng hôm nay chặn đường **lên máy chủ**;
+điều 8 nói **không rời thiết bị**. Đó là `LGD-02`, mở từ 9.99.74 — nay
+nó có tên: không phải một việc tồn đọng, mà là **nửa còn thiếu của một
+điều bất khả sửa**.
+
+### Sổ chờ
+
+- **HP9-01** — chín điều có vào `TNC_KHONG_CHAM` không. Không vào thì
+  một lượt nâng cấp hợp lệ, có chữ ký, sổ đầy đủ, **gỡ được chúng**.
+  Thêm một vùng là chủ hệ thu hẹp quyền của chính mình — máy không tự
+  làm. Mục **tự đo**: `HP9-02` đóng khi hết `chuaCoMat`.
+
+### Đọc tài liệu Drive: tìm ra đường rẻ
+
+`read_file_content` trả **văn bản thuần** (~0,17 token/byte, nửa giá
+base64), và **tệp lớn rơi xuống ĐĨA chứ không vào ngữ cảnh** — 483 KB
+`.doc` → 114k ký tự trên đĩa, tốn ~0 token. Máy rút mục lục từ đó.
+
+```
+Đọc:  mcp__Google_Drive__read_file_content  →  quá cỡ  →  lưu ra tệp
+Rồi:  python3 rút tiêu đề · dò cụm · đối chiếu kho
+```
+
+Toàn bộ 4,75 MB ≈ **350k token**, không phải 1,6 triệu. **Đọc được
+100%.**
+
+### Bẫy tên gọi thứ TƯ và thứ NĂM, tìm ra ở lượt đọc này
+
+**Thứ tư — hai thang cùng gọi *cấp*:**
+
+| Thang | Đo gì | Tổng |
+|---|---|---|
+| `BD_CAP` (kho) | **số tối đã ghi** 3→90, đi **xuyên** năm tầng | 10 |
+| Đặc tả `1.1→5.10` | **10 cấp trong mỗi tầng**, mỗi cấp 7 ngày | 50 |
+
+`HT_LUAT` đã chốt sẵn cách xử: *"Tài liệu sau đề nghị thang mới thì nó
+vào dạng **LỚP SÂU** của năm tầng, không vào dạng thang."*
+
+**Thứ năm — hai bảng luật khác hẳn nghĩa, cùng hình mã.** Nặng nhất:
+
+| mã | Bản đặc tả | Kho |
+|---|---|---|
+| L1 | Cửa vào thấp tuyệt đối · 0 phí | **L01 Không xếp hạng gia đình** |
+| L4 | Không hiển thị bản đồ | **L04 Vòng đỏ không rời máy** |
+| L10 | Chạy trên 10 bánh đà cốt lõi | **L10 Ba Ghế Người Giữ** |
+| L12 | Đích đến là gia đình | **L12 Đường thoát luôn có** |
+
+Cả hai đều là luật của chủ hệ, **không bên nào sai**. Người dựng sau đọc
+*"L4"* trong đặc tả rồi tra kho sẽ hoặc dựng nhầm, hoặc kết luận kho
+sai. Phải khai TRƯỚC khi ai dựng.
+
+Ba bộ mã mới chưa có trong kho: **KL01–KL16** (khoá cưỡng chế) ·
+**V01–V17** (vắc-xin) · **5 Két K1–K5**. Và ma trận hoá giải rào cản
+**R1–R10** — mà kho đã dùng `R01…R15` cho **VAI**, nên đó là bẫy tên
+thứ sáu đang chờ.
+
+---
+
 ## Bộ tối ưu cấu hình gói (9.99.68)
 
 Theo tệp `gita365-toi-uu-goi.ts` của chủ hệ. Máy chủ

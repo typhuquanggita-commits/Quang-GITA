@@ -16897,6 +16897,105 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
   }
 
 
+  /* DÒNG IN — bài học 9.99.63, thiếu nó thì dòng đỏ ghi số mục đứng trước. */
+  console.log('\n99 · CHÍN ĐIỀU BẤT KHẢ SỬA — GOM VÀ GỌI TÊN, KHÔNG DỰNG RĂNG THỨ HAI');
+  /* ═══════════════ 99 · CHÍN ĐIỀU BẤT KHẢ SỬA (9.99.90)
+
+     Theo HIẾN PHÁP GITA 365 — văn bản gốc, Chương II Điều 5. Bảy trong
+     chín điều ĐÃ có răng thật, dựng ở bảy bản khác nhau trong mười tám
+     tháng, và không chỗ nào gọi chúng là "bất khả sửa".
+
+     MỘT LUẬT BẤT KHẢ SỬA MÀ KHÔNG AI BIẾT NÓ BẤT KHẢ SỬA THÌ NÓ SỬA
+     ĐƯỢC — người sửa L02 sáu tháng nữa đọc chú giải của L02, thấy hợp
+     lý, và không biết rằng sửa nó là lập ra một tổ chức khác. Chính văn
+     bản gốc viết câu ấy.
+
+     Ba vế:
+
+     A · Đủ chín điều, mỗi điều `rangO` XOR `chuaCoMat`. Trình cả chín
+         như đã cưỡng chế thì người duyệt thấy chín dấu tick rồi thôi
+         không đọc — và hai điều chưa có răng lại đúng là hai điều sẽ bị
+         người không đọc tệp này chạm vào.
+
+     B · KHÔNG dựng bảng cấm thứ hai. Bản này GOM, không chép: kho
+         HP9_* không được mọc một bảng dấu hiệu nào của riêng nó, và mọi
+         ô `rangO` phải TRỎ vào mã luật CÓ THẬT (LR1 · L02 · L04 · L07 ·
+         L08 · QC3 · VIP_CAM C1). Bản thứ hai của một BẢNG CẤM là bản
+         nguy nhất trong mọi bản thứ hai (9.99.83).
+
+     C · Hai mục chờ phải CÒN trong sổ chừng nào việc chưa xong — và
+         đóng được thì phải đóng. HP9-02 tự đo: nó đóng khi không điều
+         nào còn `chuaCoMat`. */
+  {
+    const hp = await p.evaluate(() => {
+      const ds = window.G.HP9_BATKHASUA || [], lu = window.G.HP9_LUAT || {},
+        sc = window.G.HP9_CHOCHU || [];
+      /* Gom mã luật từ MỌI bảng có ô `ma` — bài học 9.99.83: danh sách
+         mã gõ tay thì thiếu đúng cái mã mới, và nó báo đỏ chỗ đang trỏ
+         đúng. Thêm mã VIP_CAM dạng C1…C6 và mã luật giao diện L01…L12. */
+      const maThat = new Set();
+      Object.keys(window.G).forEach(k => {
+        const v = window.G[k];
+        if (Array.isArray(v)) v.forEach(x => {
+          if (x && typeof x === 'object' && typeof x.ma === 'string') maThat.add(x.ma);
+        });
+      });
+      /* Ô rangO là câu văn, nên dò MÃ trong đó rồi đối chiếu — mỗi điều
+         phải trỏ ít nhất một mã có thật. */
+      const troLac = [];
+      ds.filter(x => x.rangO).forEach(x => {
+        const ma = [...String(x.rangO).matchAll(/\b(L\d{2}|LR\d|QC\d|C\d)\b/g)].map(m => m[1]);
+        if (!ma.length) { troLac.push('điều ' + x.so + ' không nêu mã nào'); return; }
+        if (!ma.some(m => maThat.has(m)))
+          troLac.push('điều ' + x.so + ' trỏ ' + ma.join('/') + ' — không mã nào có thật');
+      });
+      return {
+        so: ds.length,
+        haiDuong: ds.filter(x => !!(x.rangO || '').trim() === !!(x.chuaCoMat || '').trim())
+          .map(x => x.so),
+        thieuVan: ds.filter(x => !(x.nguyenVan || '').trim()).map(x => x.so),
+        troLac: troLac,
+        chuaRang: ds.filter(x => x.chuaCoMat).map(x => x.so),
+        /* B — không mọc bảng dấu hiệu riêng */
+        mocBang: Object.keys(window.G).filter(k => /^HP9_/.test(k) &&
+          !['HP9_BATKHASUA', 'HP9_LUAT', 'HP9_CHOCHU'].includes(k)),
+        luatDu: ['nguon', 'capHieuLuc', 'haiVanBanKhongMauThuan', 'khongDungLai',
+          'viGomLaiMoiCoNghia', 'moiDieuMotDuong', 'haiDieuChuaCoRang',
+          'vaVongTuNangCap'].filter(k => !(lu[k] || '').trim()),
+        /* C — HP9-02 đóng khi hết chuaCoMat */
+        con02: sc.some(x => x.ma === 'HP9-02'),
+        scSo: sc.length
+      };
+    });
+
+    const hetChuaRang = !hp.chuaRang.length;
+    /* Một biểu thức, tính MỘT lần — luật 9.99.60. */
+    const hpDat = hp.so === 9 && !hp.haiDuong.length && !hp.thieuVan.length &&
+      !hp.troLac.length && !hp.mocBang.length && !hp.luatDu.length &&
+      hp.scSo >= 1 && (hetChuaRang ? !hp.con02 : hp.con02);
+
+    bao(hpDat,
+      'CHÍN ĐIỀU BẤT KHẢ SỬA ĐƯỢC GOM VÀ GỌI TÊN, MỖI ĐIỀU MỘT ĐƯỜNG, VÀ KHÔNG ĐIỀU NÀO DỰNG RĂNG THỨ HAI. Bảy điều đã có răng thật dựng ở bảy bản khác nhau, và không chỗ nào gọi chúng là bất khả sửa — nên người sửa L02 sáu tháng nữa đọc chú giải của L02, thấy hợp lý, và KHÔNG BIẾT rằng sửa nó là lập ra một tổ chức khác. Hai văn bản Hiến pháp KHÔNG mâu thuẫn: 13 điều là hiến pháp VẬN HÀNH AI, chín điều này là hiến pháp TỔ CHỨC',
+      hp.so !== 9 ? 'HP9_BATKHASUA có ' + hp.so + ' điều, văn bản gốc ghi chín'
+        : hp.thieuVan.length ? 'ĐIỀU KHÔNG KHAI NGUYÊN VĂN: ' + hp.thieuVan.join(' · ')
+        : hp.haiDuong.length ? 'ĐIỀU KHAI CẢ HAI ĐƯỜNG HOẶC KHÔNG ĐƯỜNG NÀO: ' +
+            hp.haiDuong.join(' · ') + ' — phải `rangO` HOẶC `chuaCoMat`'
+        : hp.troLac.length ? 'Ô `rangO` TRỎ VÀO MÃ KHÔNG CÓ THẬT: ' + hp.troLac.join(' · ') +
+            ' — một điều bất khả sửa trỏ vào cái răng không tồn tại thì nó không được canh'
+        : hp.mocBang.length ? 'HP9_ MỌC BẢNG RIÊNG: ' + hp.mocBang.join(' · ') +
+            ' — bản này GOM, không chép; bản thứ hai của một bảng cấm là bản nguy nhất'
+        : hp.luatDu.length ? 'HP9_LUAT THIẾU Ô: ' + hp.luatDu.join(' · ')
+        : !hp.scSo ? 'HP9_CHOCHU rỗng — hai điều chưa có răng mà không mục chờ nào'
+        : hetChuaRang && hp.con02 ? 'ĐỦ CHÍN ĐIỀU CÓ RĂNG mà HP9-02 vẫn nằm trong sổ chờ — ' +
+            'sổ chờ chỉ dài ra chứ không ngắn đi là cách nó mục'
+        : !hetChuaRang && !hp.con02 ? 'CÒN ' + hp.chuaRang.length + ' điều chưa có răng (điều ' +
+            hp.chuaRang.join(' · ') + ') mà HP9-02 đã gỡ khỏi sổ chờ'
+        : '9 điều · ' + (9 - hp.chuaRang.length) + ' có răng thật, trỏ đúng mã · ' +
+          hp.chuaRang.length + ' chưa (điều ' + hp.chuaRang.join(' · ') +
+          ') · không mọc bảng cấm thứ hai');
+  }
+
+
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));
   await b.close();
