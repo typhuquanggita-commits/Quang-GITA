@@ -92,7 +92,7 @@ có thì chúng nói ra chứ không lặng lẽ bỏ qua.
   mỗi khổ
 
 **Luôn dùng `--im`.** Bộ kiểm đầy đủ in ra 867 dòng, 80.614 ký tự. Chế độ
-im in ra 184 ký tự — **giảm 438 lần** — và vẫn chạy đủ 759 phép đo, chỉ
+im in ra 184 ký tự — **giảm 438 lần** — và vẫn chạy đủ ~1045 phép đo, chỉ
 bớt phần khoe. Chỗ đỏ in kèm số mục để biết đường tìm.
 
 Bộ kiểm cần máy chủ tĩnh ở cổng 8099; `.claude/khoi-dong.sh` bật sẵn mỗi
@@ -4375,6 +4375,1156 @@ thiếu bước/ai/giờ/khôngLàm: RB-01". Mục 21 thu-worker chạy trọn c
 ungPho (sai vai chặn, đủ ba chữ ký → áp dụng).
 
 ---
+
+## BA CA LẠM DỤNG — GIÁM SÁT VÀ GIỮ RANH GIỚI (9.99.99)
+
+Gộp ba tình huống cùng khung (phát sinh + luật + phát hiện), giải pháp
+dùng lại chuỗi cấp phép đã có — trỏ, không dựng chuỗi thứ tư thừa:
+
+- **TH8 `nhanSuNgoaiLuong`** — coach/tư vấn liên hệ riêng thu phí ngoài
+  luồng, tạo phản hồi xấu, thông đồng khách. Luật `nhanSuTrongLuong`:
+  mọi lượt chạm QUA HỆ (ghiCham), liên hệ riêng đã có phạt 50% KPI ba
+  tháng; thông đồng cần hai người xác nhận (cổng chung-cu, tình huống 4).
+  TRỎ giám sát (9.99.76), không dựng bộ dò thứ hai.
+- **TH9 `doiVuotQuyen`** — khách đòi ảnh/nội dung cả năm tầng vượt
+  tầng+KPI, doạ huỷ gói. Luật `doaHuyKhongMoQuyen`: doạ huỷ KHÔNG mở
+  quyền vượt tầng; nội dung theo tầng+KPI+trần 30% (TRAN_KHACH), ảnh con
+  theo Điều 13 — bảo mật KHÔNG đánh đổi lấy một khách. Nói đường hợp lệ,
+  tôn trọng quyền huỷ.
+- **TH10 `chiaSeTaiKhoan`** — một tài khoản nhiều người. Kho mới
+  **`THT_GIAMSAT` (mười cách)** + `THT_GIAMSAT_LUAT`: G01–G08 máy đo
+  (phiên đồng thời, thiết bị, nhảy địa lý, dùng 24/7, vân tay, tốc độ,
+  chồng lấn, vượt trần), G09–G10 người soi. Ba luật: **tổng hợp nhiều
+  dấu hiệu, không một cái tự kết luận** (nhà chung máy là bình thường);
+  **không khoá tự động** (bắt oan khách trả tiền đắt hơn bỏ sót — máy
+  báo động, người quyết, cùng K2 cứu hệ); **có trần, không rình**
+  (9.99.76). Hoá giải: nhắc điều khoản + mở đường mua thêm chỗ.
+
+### Mục 105 + phá thử
+
+Mục 105 canh mười một loại, mười lăm luật, **mười cách giám sát** (soGS≥10,
+mỗi cách khai mayDo/nguoiDo), ba luật giám sát. Phá thử: bỏ ô của G10 →
+đỏ "CÁCH GIÁM SÁT thiếu cách/đo/loại". Mục 22 thu-worker: ba loại mới
+được nhận, loại lạ vẫn chặn (danh sách trắng).
+
+Kết: khung tự-hoàn-thiện nay phủ **mười tình huống chủ hệ** (5–10) trên
+một cái răng — ba chuỗi cấp phép, mười một loại phát sinh, năm cẩm nang
+ứng phó, mười cách giám sát.
+
+---
+
+## QUYỀN NĂNG AI — SUPER ADMIN CẤP (9.99.100)
+
+Theo yêu cầu chủ hệ: Super Admin là quyền cao nhất, cấp quyền cho vị
+trí, cho tài khoản khách theo gói, **và cấp cho AI quyền xử lý công
+việc**. Bản này dựng lớp cấp quyền + **mười chức năng AI**.
+
+Màn **Quyền năng AI** (`src/quyen-nang-ai.js`), máy chủ
+`may-chu/quyen-nang-ai.js`, kho `data.quyen-nang-ai.js` (3 kho `AI_`),
+bảng `quyenAI`, bộ kiểm **mục 106**, tám phép đo ở `thu-worker.js`.
+
+### Cấp quyền là cái răng, mười chức năng là thứ được cấp
+
+- **Tắt mặc định.** `aiCoQuyen` trả false khi chưa có dòng bật — một
+  quyền năng bật sẵn là một hệ tự mở rộng quyền của chính nó (VÀNG mặc
+  định 9.99.62). Chức năng có cửa mà chưa bật → AI gọi vào nhận `CHUACAP`.
+- **Chỉ Super Admin bật.** `capQuyenAI`/`thuHoiQuyenAI` khoá R01; AI
+  KHÔNG tự bật, không vai nào khác bật hộ. Mục 106 canh **chỉ hai cửa ấy**
+  ghi vào `quyenAI`.
+- **Bật hay chưa tính LÚC ĐỌC** từ dòng mới nhất của (quyền, phạm vi) —
+  không cột "đang bật". Thu hồi là dòng `bat=0`, giữ lịch sử (dongYDuLieu
+  9.99.70).
+
+### Chức năng làm việc đi qua cổng ĐÃ CÓ — một cái răng, nhiều đường vào
+
+Năm chức năng có cửa chạy thật, và mỗi cửa kiểm `aiCoQuyen` **TRƯỚC** khi
+làm gì:
+
+- **AI01** phân loại phản hồi → gọi thẳng `ghiPhatSinh` (tu-hoan-thien).
+- **AI02·AI03·AI04** soạn nháp (kho · camNang · ungPho) → gọi thẳng
+  `soanBanNhap` → **vẫn phải ba chữ ký mới 入库**. AI không nhảy qua cổng.
+- **AI05** tổng hợp giám sát → **báo động, KHÔNG tự khoá** (chỉ nêu khung
+  mười cách + nói thẳng chưa có sổ lượt dùng để chấm thật).
+
+Năm chức năng còn lại (AI06–AI10) khai `chuaCoCua` kèm lý do — trần
+trước, cửa sau (rangO/chuaCoMat 9.99.74): tóm tắt hồ sơ con phải qua
+nhật ký đọc + ẩn danh (Điều 13); rủi ro pháp lý phải TRỎ PLR (hỏi không
+kết luận); ba cái còn lại chờ chốt đường nối/duyệt.
+
+### Mục 106 + phá thử
+
+Mục 106 canh: cấp/thu khoá R01, chỉ hai cửa ghi `quyenAI`, `aiCoQuyen`
+đọc dòng mới nhất (mặc định tắt), ba cửa live kiểm `aiCoQuyen` trước khi
+routed-call, kho khớp bản chép máy chủ (10 quyền, 5 cửa + 5 chờ). Phá
+thử: bỏ cổng `aiCoQuyen` khỏi `aiPhanLoai` → đỏ "CỬA CHỨC NĂNG KHÔNG
+kiểm aiCoQuyen TRƯỚC khi làm"; hạ `capQuyenAI` xuống `laNguoiNha` → đỏ
+"CẤP/THU QUYỀN AI KHÔNG KHOÁ R01". Mục 23 thu-worker chạy trọn:
+tắt→CHUACAP, R13 không cấp được, R01 bật→chạy, thu hồi→đóng lại, AI02
+soạn vào staging.
+
+### Sổ chờ
+
+- **AIQ-01** — cấp quyền năng theo GÓI khách (nay chỉ toàn hệ `pham='he'`).
+- **AIQ-02** — dựng cửa cho AI06–AI10 (mỗi cái một đường nối cần chốt).
+
+---
+
+## NGÔI NHÀ THỊNH VƯỢNG — HUB DẪN ĐƯỜNG BẰNG HÌNH (9.99.101)
+
+Chủ hệ: *"Nhiều chữ và rối mắt quá. Thiết kế như cấu trúc của một ngôi
+nhà — kích vào phần nào ra nội dung phần đó, để xây gia đình thịnh
+vượng."*
+
+Màn **Ngôi nhà thịnh vượng** (`src/ngoi-nha.js`), kho `G.NHA_PHAN`
+(10 phần) ở chính tệp ấy, CSS `.nha-*` trong `assets/style.css`, bộ
+kiểm **mục 107**. **Không thêm kho dữ liệu, không thêm cửa máy chủ** —
+đây là một màn dẫn đường, không giữ nội dung.
+
+### Màn này TRỎ, không chép — mười phần là mười cái cửa
+
+Mỗi phần ngôi nhà mở một màn **ĐÃ CÓ**: mái→`tam-nhin` · ống khói
+đã-đổi-gì→`tien-bo` · phòng khách→`chan-dung-nha` · phòng con→
+`hanh-trinh-con` · lò sưởi→`dong-hanh` · nhà kho→`kho-qua` · cột trụ→
+`lo-trinh` · vườn→`buc-tranh` · cửa chính→`hom-nay` · nền móng→`ban-do`.
+Dựng nội dung ở đây là bản thứ hai của một sự thật; một hub thì việc
+của nó là **dẫn đường**, không kể lại. Trả lời thẳng "nhiều chữ": thay
+danh sách chữ dài bằng một bức tranh, mỗi phần chỉ icon + tên ngắn +
+một dòng gợi ý.
+
+### Nút HTML thật, KHÔNG vùng SVG
+
+Vẽ một tấm SVG rồi bắt click từng vùng thì đẹp, nhưng phép đo vùng chạm
+32px, nhãn đọc được cho người mù, và phím Tab đều **không thấy** một
+vùng SVG. Nên từng phần là một `<button data-v>` thật — cùng đường điều
+hướng `[data-v]` với cột trái — xếp thành hình nhà bằng lưới. Lưới
+`auto-fit minmax(150px,1fr)` tự xuống một cột trên điện thoại, nên
+**không thêm một `@media` nào** — khỏi đụng luật "khối chạm nằm cuối".
+
+### Phần khoá KHÔNG phải click chết
+
+Vai không mở được một phần (hồ sơ nhà là của phụ huynh…) thì phần ấy
+hiện **mờ + ổ khoá, không bấm được** — không dẫn tới màn xin cấp phép.
+Một mục dẫn tới màn xin cấp phép là "mục chết" (luật kho). Ngôi nhà vẫn
+đủ hình, và người xem đọc ngay "phòng này của vai khác", không phải
+"chỗ này chưa làm xong".
+
+### home GIỮ `bat-dau` — mục 42 thắng ý thích của tôi
+
+Tôi đặt `ngoi-nha` làm màn nhà chính (`G.PORTALS.ph/hs.home`), và **mục
+42 đỏ**: người mới đăng nhập phải đổ thẳng vào chuỗi năm bước onboarding,
+KHÔNG vào một màn tổng quan. Đó là một quyết định onboarding đã chốt —
+**không nới phép đo cho vừa thay đổi của mình**. Trả `home` về
+`bat-dau`; ngôi nhà nổi bật bằng cách đứng **đầu `G.NAV` nhóm g1** và
+**ô đầu `G.DUOI` (ph·hs)**, một chạm là tới, nhưng không cướp màn đăng
+nhập đầu tiên.
+
+### Mục 107 — đo hai đầu độc lập
+
+Rủi ro thật: một phần trỏ vào view KHÔNG TỒN TẠI — cái cửa dẫn vào
+tường — lặng lẽ, vì router rơi về `ban-do`. Mục 107 đối chiếu
+`G.NHA_PHAN` (lời khai của màn) với **G.NAV** (view thật) · **U.P**
+(icon thật, bài học 9.99.84 icon sai rơi về `spark`) · **G.PERM**
+(quyền thật, bài học 9.99.62 gõ sai tên quyền thì khoá mọi người trong
+im lặng). Phá thử: trỏ một phần vào `man-khong-co-that` + quyền
+`quyen_bia_dat` → đỏ đúng tên cả hai.
+
+### Lỗi của tôi, bộ kiểm bắt
+
+- **Mái dùng `rgba(255,255,255,...)` ba chỗ** → mục 12 đỏ (lớp phủ
+  trắng phải ≤5 chỗ). Sửa: mái dùng token `--phu-*` cho nền/viền,
+  `#fff` đặc + `opacity` cho chữ nhạt — **0 rgba trắng**. Muốn nhạt thì
+  hạ độ đục, đừng thêm một lớp trắng mới.
+
+## HÀNH TRÌNH 3D — LỚP ĐẦU: CON ĐƯỜNG NHIỆM VỤ (9.99.105)
+
+Chủ hệ muốn một web app 3D: kích ô → hiện con đường lộ trình, một người
+bước đi chạm từng nhiệm vụ, nhiệm vụ hiện ra, có cô trợ lý AI dẫn; khách
+tự tạo nhân vật 3D hợp ảnh đại diện; kèm video hướng dẫn.
+
+Màn **Con đường nhiệm vụ** (`src/con-duong.js`), NAV nhóm g2, bộ kiểm
+**mục 108**. Không thêm kho, không thêm cửa máy chủ.
+
+### Dựng KHUNG trước — đây là LỚP ĐẦU
+
+Lớp đầu: con đường + nhân vật bước + trợ lý dẫn + nhiệm vụ hiện ra. Ba
+thứ còn lại là **lớp sau** (sổ chờ CD-01/02/03), vì mỗi cái là một phần
+lớn và một cái vướng luật.
+
+### Ràng buộc CỨNG: ảnh đại diện → nhân vật 3D là Điều 13
+
+Gửi ảnh khách (nhất là học viên <18) sang một dịch vụ dựng avatar 3D đặt
+ngoài lãnh thổ là **xử lý dữ liệu xuyên biên giới** — phạm Điều 13 (bất
+khả sửa) và Luật 91/2025. Nên "nhân vật hợp ảnh" phải làm bằng **bộ tạo
+nhân vật TẠI CHỖ** (chọn dáng/tóc/trang phục), ảnh không rời máy. Đây là
+CD-01, và nó KHÔNG được đi đường ảnh-ra-ngoài.
+
+### 2.5D SVG chứ chưa WebGL — và vì sao
+
+Con đường uốn vẽ bằng SVG: chạy mượt trên web lẫn .exe, không tải thư
+viện nặng, và **đo được bằng do-khung-man** (nút thật, chữ thật). WebGL
+là lớp sau nếu cần — nhưng phần lớn cảm giác "sinh động" đạt được bằng
+2.5D + chuyển động CSS mà không mở một mặt trận testing mới.
+
+### Đọc BD_LON THẲNG — mười mốc LÀ mười bánh đà
+
+Mười mốc trên đường là `G.BD_LON` (mỗi bánh mang sẵn `ten·c·ic·tang·
+vong·y·nho`). Màn KHÔNG chép mười nhiệm vụ vào — chép là bản thứ hai của
+một sự thật; kho đổi một bánh thì con đường nói sai. Màu mốc lấy `b.c`
+thật, icon lấy `b.ic` thật. Mục 108 đọc mã nguồn đòi màn **đọc thẳng
+G.BD_LON** (bỏ chú giải + chuỗi trước khi dò — luật 9.99.78). Phá thử:
+đổi `G.BD_LON` → tên khác thì đỏ.
+
+### Nhân vật đứng ở mốc, trợ lý nói mốc ấy
+
+`G.cdBuoc` là mốc đang đứng; nút Lùi/Bước tiếp và click mốc đổi nó, vẽ
+lại. Mốc ≤ cdBuoc sáng, mốc sau mờ — đọc ra tiến độ. Cô trợ lý (thẻ trên
+cùng) nói `vong` của mốc; bảng nhiệm vụ dưới hiện `y` + ba việc `nho` +
+nút mở màn Mười bánh đà để làm thật.
+
+### Sổ chờ
+
+- **CD-01** — bộ tạo nhân vật tại chỗ (chọn dáng/tóc/trang phục/tông
+  da), gắn vào lúc hoàn thiện hồ sơ. KHÔNG gửi ảnh ra ngoài (Điều 13).
+- **CD-02** — video hướng dẫn hành trình: dựng bằng `dung-phim.js` từ
+  khung ĐÃ phát hành (C19) + lời đọc là tệp có sẵn (C20), không để máy
+  tự sinh.
+- **CD-03** — mỗi ô trong Ngôi nhà mở đúng con đường của ô đó (nay con
+  đường đi trên mười bánh đà chung); cần chốt mỗi ngăn nối lộ trình nào.
+
+### Hành trình lớp 2 — nhân vật · con đường theo chặng · tự dẫn (9.99.106)
+
+Chủ hệ: "tạo cả 3". Ba lớp cùng một bản, bộ kiểm **mục 108 mở rộng · mục 109**.
+
+**CD-01 · Nhân vật của tôi** (`src/nhan-vat.js`, NAV g2). Khách tự chọn
+tông da · kiểu tóc · màu tóc · trang phục · kính từ phần dựng sẵn. Hình
+vẽ bằng `G.nvVe(doc)` — **một nguồn duy nhất** dùng cho cả màn này lẫn
+nhân vật bước trên Con đường (không hai bản). Lưu localStorage (mấy chỉ
+mục, không phải nhận dạng), bọc try/catch.
+
+> **Điều 13 là RĂNG, không phải lời dặn.** Mục 109 đọc mã nguồn và ĐỎ
+> nếu thấy đường đọc ảnh (`FileReader`/`readAsDataURL`/`createObjectURL`)
+> hay `fetch(` — ảnh khách KHÔNG được rời máy sang một dịch vụ dựng
+> avatar ngoài (xử lý dữ liệu xuyên biên giới, phạm điều bất khả sửa).
+> Phá thử: thêm `FileReader` → đỏ. Đây là lý do "nhân vật hợp ảnh" làm
+> bằng bộ chọn tại chỗ, không bằng upload ảnh.
+
+**CD-02 · Xem hướng dẫn** (tự dẫn). Nút trên Con đường: nhân vật tự bước
+qua từng mốc (`setInterval` 2,6s), trợ lý nói từng mốc. Timer **tự kiểm
+view** — rời màn thì tự tắt, không rò; người tự bấm/đổi chặng thì dừng
+tự dẫn. Đây là "video hướng dẫn" dạng đi-trong-app; mp4 thật (dựng qua
+`dung-phim.js` theo C19/C20) là CD-02b khi có khung+lời đọc.
+
+**CD-03 · Con đường theo CHẶNG.** Hàng chọn *Cả hành trình · T1…T5* lọc
+mười bánh đà theo `BD_LON[].tang` **lúc đọc** (không giữ danh sách thứ
+hai) — mỗi chặng một con đường riêng. Nối mỗi ô Ngôi nhà vào đúng con
+đường của ô đó là CD-03b (cần chốt mỗi ngăn nối lộ trình nào).
+
+Ba bộ kiểm xanh: kiem-tra 1038 · do-khung-man 1652 (4 khổ) · rà soát sạch.
+
+### Sổ chờ hành trình
+
+- **CD-02b** — mp4 hướng dẫn thật qua `dung-phim.js` (C19 khung đã phát
+  hành · C20 lời đọc tệp có sẵn), không để máy tự sinh.
+- **CD-03b** — mỗi ô trong Ngôi nhà mở đúng con đường của ô đó.
+- **CD-04** — đồng bộ nhân vật theo tài khoản (nay lưu localStorage một
+  máy): cần một cửa máy chủ + một bảng, lưu mấy chỉ mục (không phải ảnh).
+
+### Cấu trúc ngôi nhà theo blueprint chủ hệ + 10 bánh đà (9.99.103 · 9.99.104)
+
+Chủ hệ chốt hình ngôi nhà cụ thể: **mái = Tầm Nhìn Gia Đình Thịnh
+Vượng** · **nền = Văn hoá·Quy tắc·Thói quen·Kỷ luật** · **tám ngăn**
+(Mục tiêu · Hành Trình Hạnh Phúc · Phát triển Bản Thân · Tài năng ·
+Giá trị Sống · Phẩm Chất · Vinh Danh · Tiêu Chuẩn Sống) · **cửa =
+Hành động** · **vòng GITA365 bao quanh** · **mười bánh đà quay quanh**.
+
+**9.99.103 — sắc màu:** mỗi phần mang một sắc riêng qua biến CSS `--ac`
+(gán ở `ngoi-nha.js` từ token thương hiệu `--t1..t5 · --gita*`), icon
+trong huy hiệu tròn màu đặc, thẻ ánh nhẹ sắc phòng. Dùng `color-mix`
+với một dòng lùi đứng trước (trình cũ rơi về dòng lùi). 0 rgba trắng.
+
+**9.99.104 — blueprint + 10 bánh đà:**
+- `G.NHA_PHAN` viết lại đúng 11 phần theo blueprint; mỗi phần **trỏ màn
+  đã có** (tam-nhin · cu-hich · buc-tranh · ban-do-ca-nhan ·
+  chan-dung-nha · chuyen-hoa · chin-vai · vinh-danh · bang-so ·
+  hom-nay · thoi-quen). Không dựng nội dung mới.
+- **Mười bánh đà đọc THẲNG `G.BD_LON`** (tên thật của kho), KHÔNG chép
+  mười tên vào màn — chép là bản thứ hai của một sự thật, kho đổi tên
+  một bánh thì màn nói sai. Mỗi bánh mở `banh-da`. Năm trên + năm dưới,
+  ôm lấy nhà, trong vòng GITA365.
+- Mục 107 thêm vế: đích `banh-da` là view thật · `BD_LON` đủ mười.
+
+**Hai lỗi của tôi, rà soát bắt:**
+1. Chấm màu bánh đà là `<span>` rỗng → 10 thẻ rỗng. Sửa: vẽ bằng
+   `::before`, không tạo thẻ rỗng.
+2. Nhãn GITA365 dùng `font-size:13px` → thang chữ thành 10 bậc (luật
+   ≤9). Sửa về `12.5px` (bậc có sẵn). Thêm một cỡ chữ là phải hỏi thang
+   đã có bậc ấy chưa.
+
+### Nâng chất lượng thị giác + sức hút marketing (9.99.102)
+
+Chủ hệ: *"xử lý tối ưu hơn, chất lượng hơn; giao diện hiệu quả marketing
+hơn."* Lượt này **chỉ CSS + chữ tiêu đề** — không đổi kho, không đổi
+logic, không đổi ánh xạ phần→view. Nên phá thử mục 107 vẫn nguyên giá
+trị; rủi ro dồn vào `do-khung-man` (thẻ cao hơn, icon vòng tròn).
+
+- **Khung cảnh có chiều sâu**: quầng sáng "trời" sau mái (token
+  `--gita-mo-1`), mái đổ bóng theo HÌNH đã cắt bằng `filter:drop-shadow`
+  (box-shadow theo hộp vuông, không theo trapezoid), thân nhà có bóng nổi.
+- **Icon trong vòng tròn mềm** — mỗi phòng dễ nhận, mời gọi hơn danh
+  sách chữ.
+- **Cửa chính = nút hành động chính**: nền `--gita-sau` ĐẶC (không
+  gradient nhạt), chữ trắng tương phản ~7:1, to và nổi nhất — lời mời
+  "vào nhà mỗi ngày" phải bật lên.
+- **Tiêu đề bán tầm nhìn**: *"Mỗi gia đình là một ngôi nhà đang được
+  xây… mỗi ngày một chạm"* — vẫn ít chữ.
+
+**Không thêm một lớp trắng rgba nào** (mục 12 cấm quá 5): vòng icon trên
+mái/cửa dùng lớp phủ TỐI `--phu-3`, chữ trắng là `#fff` đặc + `opacity`.
+Muốn nhấn thì dùng token bóng/độ đục, đừng thêm lớp trắng. Ba bộ kiểm
+xanh: 1036 · rà soát sạch · 1636 lượt (4 khổ).
+
+---
+
+## ĐIỀU PHỐI 100 TRỢ LÝ SIÊU CẤP — TRẦN TRƯỚC, TRỢ LÝ SAU (9.99.107)
+
+Chủ hệ: dựng 100 trợ lý AI siêu cấp đảm nhận chi tiết mọi vai, hỗ trợ Bộ
+não thiên tài GITA365 vận hành toàn diện; Bộ não CAO NHẤT và điều phối;
+sắp tới nối tuyến với web app nhánh — cần điều phối mạch lạc KHÔNG xung
+đột; trợ lý tự hoàn thiện theo chuẩn chuyên gia và TUÂN THỦ HIẾN PHÁP;
+nâng năng lực Bộ não ×100.
+
+Màn **Điều phối trợ lý AI** (`src/dieu-phoi.js`, kho `G.DP_*` ở chính tệp
+ấy), máy chủ `may-chu/dieu-phoi.js` (ba cửa), bộ kiểm **mục 110** (4 phép
+đo) + năm phép đo ở `thu-worker.js`. Và **cô trợ lý AI của GITA**
+(`G.troLyVe` ở `con-duong.js`) — gương mặt dẫn đường, vẽ SVG tại chỗ,
+không nhúng ảnh ngoài (Điều 13); dùng chung ở Con đường và Điều phối.
+
+### Dựng CÁI TRẦN điều phối TRƯỚC — lần thứ sáu
+
+Sau Hiến pháp (9.99.62), trần giám sát (9.99.76), tự nâng cấp (9.99.77),
+Supreme (9.99.83), Studio (9.99.92). Ở đây: một trăm tác nhân cùng chạm
+một hệ mà KHÔNG có tầng điều phối thì hai trợ lý cùng sửa một thứ, và cái
+hỏng lộ ra ở **thứ thứ ba đọc phải hai kết quả khác nhau**, không ở lượt
+sửa. Nên trần (Bộ não cao nhất · khoá sở hữu chống trùng · ràng hiến
+pháp) phải có TRƯỚC khi một trợ lý nào ra tay.
+
+### Chống xung đột = MỖI TRỢ LÝ MỘT KHOÁ SỞ HỮU = MỘT CỬA THẬT
+
+Khoá sở hữu của một trợ lý LÀ cửa nó phục vụ. Hai trợ lý không cùng một
+cửa → không bao giờ hai trợ lý cùng ra tay trên một thứ. Đây là phép
+chống xung đột **đo được**: mục 110 đòi 100 khoá ĐÔI MỘT KHÁC NHAU và mọi
+khoá là một cửa CÓ THẬT trong `worker.js` (CAN_PHIEN) — đo hai đầu độc
+lập (9.99.84): roster `G.DP_TRO_LY` ↔ danh sách cửa thật. Một trăm trợ lý
+neo vào 100 cửa thật trong 29 miền.
+
+### Bốn chỗ TRỎ, không chép — và bản thứ hai của HIẾN PHÁP là nguy nhất
+
+Bộ não (BN_*), Hiến pháp 13 điều, hàng rào 10 điểm, chín điều bất khả sửa
+(HP9), lớp cấp quyền AI (9.99.100), vòng tự nâng cấp có cổng (9.99.77),
+ba chuỗi cấp phép (9.99.96–99) — TẤT CẢ đã có. Trăm trợ lý KHÔNG dựng lại
+cái nào; mỗi trợ lý TRỎ vào một cửa thật và đi qua đúng cổng của cửa ấy.
+Chép hiến pháp/hàng rào vào `DP_*` là bản thứ hai của một BẢNG CẤM — bản
+nguy nhất (9.99.83). Mục 110 canh `DP_*` không mọc `DP_HIENPHAP/RAO/...`.
+
+### ×100 LÀ LỜI KHAI, không phải chỉ tiêu
+
+"Nâng năng lực Bộ não ×100" là một HƯỚNG. Dựng ô `heSoNangLuc:100` là dựng
+lại đúng bẫy SUP-01 (9.99.86): một con số để rồi có người chạy cho đủ.
+Năng lực thật tăng bằng một trăm trợ lý làm chi tiết dưới điều phối của Bộ
+não — không bằng một hệ số. `DP_TRAN[DP5]` mang `loiKhai:true`; mục 110
+canh không `DP_*` nào có ô SỐ tự xưng năng lực/hệ số.
+
+### Điều phối KHÔNG tự ra tay — nếu không nó là CỬA HẬU
+
+Mọi cổng (Điều 13, cấp quyền AI, ba chữ ký) nằm ở TỪNG cửa thật. Nếu
+`dieuPhoiTroLy` chạy việc thay thì nó đi vòng qua tất cả. Nên nó chỉ trả
+BẢN KẾ HOẠCH (trợ lý nào · cửa nào · cổng nào) rồi DỪNG; việc thật vẫn gọi
+đúng cửa ấy, cửa ấy tự kiểm cổng. Mục 110 + thu-worker canh
+`may-chu/dieu-phoi.js` KHÔNG có INSERT/UPDATE và KHÔNG gọi một cửa ghi.
+
+### Tự hoàn thiện ĐI QUA vòng đã có cổng
+
+`tuHoanThienTroLy` không tự sửa gì — nó gói yêu cầu rồi TRỎ thẳng
+`deXuatNangCap` (vòng năm cửa, bảy vùng K1–K7 không tự chạm). Chạm vùng
+cấm (hiến pháp…) thì CHÍNH vòng trả `VUNGCAM`, không phải một luật thứ hai
+ở đây. Bộ thử chứng minh: `tuHoanThienTroLy` với vùng "hiến pháp" → VUNGCAM.
+
+### Nối tuyến web app nhánh — không gian khoá sở hữu DÙNG CHUNG
+
+`DP_TUYEN`: app nhánh khai khoá sở hữu vào CÙNG không gian, nên một cửa
+vẫn chỉ một trợ lý dù ở app nào; Bộ não GITA365 là đầu điều phối chung,
+app nhánh không có Bộ não thứ hai (một bộ não thứ hai là một hiến pháp
+thứ hai). Chưa nối — khai để không ai tưởng đã nối.
+
+### Cô trợ lý AI của GITA — G.troLyVe, một nguồn
+
+Vẽ chân dung SVG tại chỗ (tóc đen dài · áo blouse trắng · ve áo xanh GITA
+· chấm đỏ thương hiệu), KHÔNG nhúng ảnh raster ngoài, KHÔNG gửi ra dịch vụ
+nào — cùng luật Điều 13 với `nvVe`. Dùng ở thẻ dẫn đường Con đường và ngăn
+Bộ não của màn Điều phối. Một nguồn: sửa một chỗ, cả hệ đổi theo.
+
+### Sổ chờ
+
+- **DP-01** — 100 trợ lý nay neo 1:1 vào 100 cửa. Khi thêm cửa/miền mới
+  thì thêm trợ lý vào `DP_SPEC` (một dòng), mục 110 tự canh khoá không
+  trùng và cửa có thật. Chốt: roster có cần vượt 100 khi hệ lớn không.
+- **DP-02** — nối tuyến web app nhánh: mỗi app nhánh khai khoá sở hữu vào
+  không gian chung; chốt cách một app nhánh đăng ký trợ lý với Bộ não.
+
+## KHÔNG GIAN 5D · CHUYỂN ĐỘNG · CỘT THU GỌN · HỆ CHỮ (9.99.108)
+
+Chủ hệ: phá cách sang hiện đại, chiều sâu ("5D"), cao cấp; người xem
+cảm nhận mình đang DỊCH CHUYỂN; bấm/chọn đều có chuyển động và sự KHAI
+MỞ; hai cột thu gọn được để mở rộng màn chính; mô thức hoá phần chữ.
+
+**"5D" KHÔNG phải năm chiều thật** — khai thẳng trong `style.css` để
+người sau không tưởng có hệ toạ độ năm trục (luật kho: không khai điều
+máy không làm được). Nó là CHIỀU SÂU KHÔNG GIAN: lớp bóng chồng
+(`--noi-1/2`), phối cảnh (`perspective`), nghiêng nhẹ theo hướng rê
+(`rotateX`), và chuyển cảnh "đi vào" mỗi màn.
+
+### Cột thu gọn — `G.S.thuCot`
+
+Nút `data-act="thu-cot"` (deskonly) trên thanh trên gập CẢ HAI cột để
+màn chính mở full (căn giữa ≤1180px); bấm lần nữa hiện lại. Nhớ qua
+phiên (save/load), áp lại lúc dựng vỏ. Luật đặt trong `@media(min-width:
+861px)` để KHÔNG đè `.open` của ngăn kéo điện thoại — cùng độ đặc hiệu
+`#left`, dòng sau thắng, nên phải khoá theo khổ. Điện thoại hai cột vốn
+là ngăn kéo đóng sẵn nên thu gọn không thêm gì.
+
+### Chuyển động — và chỗ suýt làm do-khung-man đỏ oan
+
+`.view` trượt-dọc + mờ mỗi lần đổi màn; `oMo` hiện lần lượt các ô hub.
+**KHÔNG dùng `scale()` trong hai animation ấy**: scale co MỌI kích thước
+con ~1,4% trong nửa giây đầu, và `do-khung-man` đo vùng chạm GIỮA lúc ấy
+có thể thấy một ô 32px tụt còn 31,5 — đỏ oan một ô đúng chuẩn. Cảm giác
+"đi vào" đủ mạnh bằng trượt dọc (transform translateY KHÔNG đổi kích
+thước đo được). Nghiêng 3D chỉ ở `@media(hover:hover)` nên con trỏ thô
+(khổ chạm) không dính.
+
+Mọi chuyển động TẮT HẲN ở `@media(prefers-reduced-motion:reduce)` cuối
+khối.
+
+### Hệ chữ — foundation, ánh xạ ĐÚNG thang chín bậc
+
+Sáu vai `.t-display/title/h/sub/body/cap/label`, mọi cỡ nằm trong thang
+10.5·12.5·14.5·16·18·21·26·33 đã có (ra-soat canh ≤9 bậc). Rải ra 180
+màn là việc dần — **UI5D-01** trong sổ chờ.
+
+### Sổ chờ
+
+- **UI5D-01** — rải hệ chữ `.t-*` ra toàn bộ màn (nay mới là foundation
+  + shell/hub). Làm dần, mỗi màn một lượt, không đổi cỡ ngoài thang.
+- **UI5D-02** — điều hướng không gian sâu hơn: kéo-xoay (drag-to-rotate)
+  giữa các màn/lộ trình. Lớn; cần một mô hình cảnh riêng và bộ đo mới,
+  nên tách khỏi bản này.
+
+## HÀNH TRÌNH LỚP 3 — CD-03b · CD-04 (9.99.109)
+
+Chủ hệ: *"tiếp tục lập trình full các phần đang còn dở."* Hai mục hành
+trình làm được TRỌN, không cần chủ hệ quyết: CD-03b và CD-04.
+
+### CD-03b — mỗi ô Ngôi nhà mở CON ĐƯỜNG của chặng nó
+
+Đúng hình dung 3D đầu tiên của chủ hệ: *kích ô → hiện con đường lộ
+trình*. Tám ngăn trong nhà nay khai `chang` (T1…T5) và mở `con-duong`
+lọc đúng chặng ấy (`G.cdMoTheoChang`), thay vì đi thẳng màn nội dung.
+Con đường là lối ĐI; phòng là nơi LÀM — nên con đường có nút **Vào
+phòng** (`G.cdVaoPhong`) dẫn vào màn nội dung, một chạm. Mái · cửa ·
+nền không có `chang` nên đi thẳng nội dung như cũ.
+
+`chang` giữ ở NHA_PHAN (một nguồn); con đường lọc `BD_LON[].tang` lúc
+đọc (không danh sách thứ hai). Mục 107 thêm vế: mọi `chang` phải ∈
+`G.TIERS` — trỏ chặng không có thì `cdMoTheoChang` lọc ra rỗng, con
+đường trống lặng lẽ. Người TỰ đổi chặng (`cdLoc`) thì xoá `cdVaoPhong`
+— nút Vào phòng của phòng cũ hết đúng.
+
+### CD-04 — nhân vật đồng bộ theo tài khoản
+
+`may-chu/nhan-vat.js` (`luuNhanVat` · `docNhanVat`), bảng `nhanVatKH`,
+mục **111**, năm phép đo `thu-worker.js`.
+
+**Chỉ lưu NĂM CHỈ MỤC (da·tocMau·toc·ao·kinh), KHÔNG ảnh, KHÔNG tên
+(Điều 13).** Một dump CSDL lộ không mang theo khuôn mặt hay tên ai —
+nhân vật dựng lại từ năm con số, mà năm số ấy không nhận ra ai. Cùng
+luật với `nvVe` vẽ tại chỗ ở máy khách: ảnh KHÔNG rời máy; thứ rời máy
+chỉ là chỉ mục. Mục 111 bóc khối `CREATE TABLE nhanVatKH` và ĐỎ nếu
+thấy cột tên `anh·hinh·image·ten·hoTen·name·face·avatar…`.
+
+**Ghi ĐÈ (ON CONFLICT), khác luật "dòng mới không ghi đè".** Đồng ý ·
+giá · yêu cầu xoá giữ LỊCH SỬ vì có câu *"hôm ấy đã đồng ý chưa"*. Nhân
+vật là một LỰA CHỌN HIỂN THỊ hiện tại — như một ô cài đặt — không ai
+hỏi *"tháng trước tóc màu gì"*; giữ lịch sử một sở thích cosmetic là
+giữ rác.
+
+**Khoá theo `hoSo.uid` của phiên**, không nhận `uid` do người gọi
+truyền (một ô như thế cho người này ghi đè nhân vật người kia). Mọi vai
+có phiên đều có nhân vật (cosmetic, không khoá theo vai). Bộ thử chứng
+minh hai tài khoản không thấy nhân vật của nhau, và chỉ mục rác bị kẹp
+(999→50, -5→0).
+
+**Client giữ localStorage làm bản offline** (chạy cả trong .exe); máy
+chủ chỉ thêm đường đồng bộ. `G.nvLuu` đẩy lên (bắn-rồi-quên, lỗi mạng
+không hỏng lượt chọn); `G.nvDongBoVe` kéo về một lần mỗi phiên khi mở
+màn. Đẩy/kéo qua `G.goiMayChu`, KHÔNG `fetch(` — nên mục 109 (cấm
+`fetch(` trong nhan-vat.js) vẫn xanh.
+
+### Sổ chờ còn lại của hành trình
+
+- **CD-02b** — mp4 hướng dẫn thật qua `dung-phim.js`: cần **tệp lời
+  đọc CÓ SẴN** (luật C20 cấm máy sinh giọng) + bộ khung ĐÃ phát hành
+  (C19). Chưa có tệp lời đọc nên chưa dựng — chờ chủ hệ gửi giọng, hoặc
+  chốt làm mp4 câm (Ken Burns) không lời.
+
+## SOI ĐỐI KHÁNG — 9.99.107 LÀ TẤM ÁP PHÍCH, VÀ HAI LỖ THẬT KHÁC (9.99.110)
+
+Chủ hệ: *"Tôi cần kết quả test khắt khe nhất, không phải báo nhanh cho
+có để nịnh. 100 trợ lý chất vấn nhau, soi chỉ tiêu cao nhất, không dễ
+với nhau."* Đúng lúc — vì bản 9.99.107 tôi báo "xanh" là **báo nịnh**.
+
+Tôi tung **ba tổ soi đối kháng** lên 9.99.107 · 108 · 109, mỗi tổ được
+lệnh săn lỗi thật, tự phản biện, chỉ báo cái ĐÃ XÁC MINH, và trả lời
+câu gắt nhất: *"tính năng THẬT hay chỉ là tấm áp phích?"*
+
+### 9.99.107 bị chấm THẲNG là ÁP PHÍCH — và đúng
+
+`dieuPhoiTroLy` bản đầu là một **cái echo**: nhận bừa mọi chuỗi làm
+`khoaSoHuu`, KHÔNG đối chiếu gì, rồi khai *"đã tìm trợ lý sở hữu cửa
+X"* kể cả khi X không tồn tại. Đó là **một lời nói dối mang dấu hệ
+thống** (cùng luật `daGoNgoai`/`den`/`conHan`), và cả tính năng thành
+tấm áp phích (mục 88: *bảng thì không chặn được gì*). Tệ hơn: mục 110
+vế D và bộ thử worker cũ là **cái gương** — chúng khẳng định các cờ
+`khongTuRaTay===true` (hằng số tự khai) và dò regex tĩnh, nên KHÔNG THỂ
+đỏ trên sự rỗng ấy.
+
+**Sửa cho FALSIFIABLE:** `dieuPhoiTroLy(y,env,db,hoSo,danhSachCua)` nay
+đối chiếu `khoaSoHuu` với danh sách cửa THẬT (worker truyền `CAN_PHIEN`)
+TRƯỚC khi ghi nhật ký; cửa lạ → **`KHONGCUA`**; không có danh sách →
+đóng, không đoán; câu `vi` nói THẲNG là nó chỉ *xác nhận cửa có thật +
+trỏ*, không "tìm ra" bằng một phép tra không tồn tại. Mục 110 thêm **vế
+E** (đòi `.includes(khoaSoHuu)` + `KHONGCUA` + worker truyền CAN_PHIEN),
+và bộ thử worker nay có **phép đo HÀNH VI**: cửa lạ → KHONGCUA (echo cũ
+sẽ trả `ok` → đỏ). Đó là cái test mà bản cũ thiếu.
+
+> **Bài học nặng nhất:** một tính năng TRÔNG hoàn chỉnh (màn đẹp, 100
+> dòng, 7 luật, phép đo xanh) vẫn có thể là áp phích nếu **không cửa nào
+> ra tay và không phép đo nào đỏ được trên sự rỗng ấy**. Báo "xanh" cho
+> nó là báo nịnh. Cách duy nhất chống: một phép đo HÀNH VI có thể đỏ.
+
+Phần THẬT của 9.99.107 (tổ soi công nhận, không nới): cổng vai R01–R12
+thật; `tuHoanThienTroLy` TRỎ thật vào `deXuatNangCap` (chạm hiến pháp →
+VUNGCAM); ba vế A/B/C của mục 110 (roster ↔ CAN_PHIEN) là đo hai đầu
+thật. Roster vẫn là **bản đồ sở hữu** (một cửa = một trợ lý), nay có
+răng ở cửa xác minh; nói thẳng nó không "điều phối chạy thay".
+
+### 9.99.108 — một lỗ a11y THẬT
+
+Danh sách `transition` và danh sách `transition:none` (reduced-motion)
+là **hai bản chép viết tay**, và bản đầu bỏ sót `.dp-tl-o · .cd-loc-o`
+ở danh sách tắt — người xin giảm chuyển động vẫn nhận transform khi bấm
+chip lọc chặng. Sửa: thêm vào danh sách tắt. Và dựng **mục 112** canh
+*mọi selector có transition trong khối 5D phải nằm trong danh sách tắt*
+— phá thử: bỏ hai selector khỏi danh sách tắt → đỏ đúng tên. Cũng dời
+`#left,#right{transition}` vào `@media(min-width:861px)` (bản đầu đặt
+toàn cục, đè easing ngăn kéo điện thoại).
+
+### 9.99.109 — một lỗ HIGH: người dùng bị BỎ RƠI
+
+CD-03b đổi tám ngăn từ đi-thẳng-nội-dung sang mở-con-đường. Nhưng
+`con-duong` **return màn rỗng TRƯỚC** khi vẽ nút "Vào phòng" — nên khi
+`BD_LON` chưa nạp (vai không có gói nền; bốn ngăn n2·n3·n5·n7 không có
+`perm` nên ai cũng bấm được), người bấm ô rơi vào màn rỗng **không lối
+vào nội dung phòng**. Nội dung trước đây tới được, nay không. Sửa: dựng
+nút "Vào phòng" TRƯỚC lối return rỗng — lối vào phòng luôn còn.
+
+Hai lỗ nhỏ hơn: onclick dựng chuỗi JS từ dữ liệu đã `h()` (sai ngữ cảnh
+— `h()` là escape THUỘC TÍNH, không phải chuỗi JS; latent vì dữ liệu
+tĩnh) → đổi sang `data-*` + `G.nhaMoChang(this)` đọc dataset. Và mục 111
+`svUid` là **cái gương** (chỉ dò "có hoSo.uid", không chặn `y.uid` từ
+payload) → nay đòi CẢ HAI: có đọc hoSo.uid VÀ không đọc uid từ payload.
+Và trạng thái `cdVaoPhong` cũ dính khi mở con-duong bằng menu → `G.go`
+gọi `G.cdMoThuong()` xoá (giữ khi đến từ phòng qua cờ `_cdTuPhong`).
+
+### Sự thật về "thang 1000 điểm" — nói vì chủ hệ hỏi "test chuẩn 1000 điểm"
+
+**KHÔNG có điểm 1000 đo được.** Đếm thẳng `data.qa.js`: ~**28/50 ô máy
+đo**, ~**22/50 là LỜI KHAI** (người tự chấm). Cộng thành "1000 điểm" là
+gộp cột đo với cột khai — thứ luật kho cấm (9.99.80–82). Ai trình
+"929/1000" hay "1000/1000" là con số **nịnh**. Còn `do-ro-ri` (rò dữ
+liệu theo vai) chạy thật: **KHÔNG RÒ** — đây mới là phép đo khắt khe
+đáng tin, và nó xanh thật.
+
+## SOI ĐỐI KHÁNG ĐỢT HAI — HAI LỖ THẬT Ở BỀ MẶT ĐẮT NHẤT (9.99.111)
+
+Chủ hệ: *"làm full toàn bộ"* — chạy trọn vòng khắt khe: tìm lỗ → sửa hết
+→ test lại. Đợt một (9.99.110) soi ba màn mới. Đợt hai soi các **bề mặt
+hậu quả cao nhất**: cổng ẩn danh Điều 13, cổng tài chính, cứu hệ. Hai lỗ
+THẬT, một "lỗ" hoá ra là thiết kế đúng.
+
+### LỖ 1 · ĐIỀU 13 — bộ dò tên MÙ trước họ mang dấu "Đ" (nặng nhất)
+
+`soatRaNgoai` ở `may-chu/bo-nao.js` là bộ dò DUY NHẤT chặn dữ liệu người
+rời hệ. Bản cũ dựng regex tên bằng `\b`:
+
+```
+'\\b(' + HO_VIET.join('|') + ')\\s+[A-ZĐÀÁ…]…'
+```
+
+Đây là **cái bẫy \b ĐẦU TIÊN tệp này ghi** (mục "Ba cái bẫy của phép dò
+chữ tiếng Việt"), và nó cắn ở đúng chỗ chết người: `\b` không khớp trước
+"Đ" (ngoài lớp `\w`), nên bốn họ trẻ con **Đặng · Đỗ · Đoàn · Đinh** lọt
+cổng với `sach:true` — đi thẳng ra `guiDeBaiRaNgoai → nhanAnhVe → fetch`
+tới bộ tạo ảnh đặt ngoài lãnh thổ. Đó là **xử lý dữ liệu xuyên biên giới
+một cái tên trẻ con**, phạm Điều 13 **bất khả sửa** và Luật 91/2025.
+
+Xác nhận bằng cách CHẠY THẬT regex, không đọc mã đoán: cả bốn họ Đ →
+`null` → `sach:true`. Sửa: biên Unicode `(?<![\p{L}\p{M}])` + `\p{Lu}` +
+cờ `u` + chuẩn hoá `NFC` — không bao giờ thiếu một dấu, không bao giờ mù
+trước một họ. Lớp `[A-ZĐÀÁ…]` gõ tay **luôn thiếu một dấu**; đừng bao giờ
+gõ tay lớp chữ có dấu.
+
+> **Phép tự kiểm KHÔNG THỂ đỏ trên đúng lỗ nó canh là phép kiểm giả.**
+> V5 của `phap-ly-rui-ro.js` chỉ thử **"Nguyễn Thị Lan"** — mà bản cũ đã
+> bắt được Nguyễn. Nên suốt nhiều bản V5 XANH trong khi cổng để lọt bốn
+> họ Đ. Nay V5 thử THÊM **"Đặng Văn Minh"**, và bộ thử worker có phép đo
+> riêng cho họ Đ. Phá thử (trả regex về `\b`): CẢ HAI đỏ. Lần thứ … của
+> luật *một phép kiểm chưa từng đỏ ở chỗ nguy hiểm nhất thì chưa phải
+> phép kiểm*.
+
+### LỖ 2 · TÀI CHÍNH — tầng "ghi nhận" là cửa hậu MỘT CHỮ KÝ không trần
+
+Tổ soi tài chính (chất vấn sáu câu, chỉ báo cái đã trace) tìm ra: chỉ
+hai cửa ghi `chiPhi.trangThai='daDuyet'` — `duyetChi` (qua trọn thang
+nấc + mốc chu kỳ) và **`chotLuong`** (KHÔNG qua). `chotLuong` gọi được
+bởi `lv<=3` (Giám đốc R03, không chỉ Super Admin), và `ghiNhan` là số
+**người chốt tự gõ**, chỉ chặn `>=0` và lý do ≥10 ký tự — **không trần**.
+
+Đường lách: R03 chốt lương người thông đồng với `ghiNhan = 500 triệu`,
+một câu lý do → 500 triệu ra `chiPhi` ở `daDuyet` với **một chữ ký**,
+không `nac`, không `mocCua`, không chữ ký thứ hai. Chi thẳng cùng cỡ đòi
+**N5** (hai người + hoá đơn + báo giá) VÀ **mốc chu kỳ C5/C6** (Super
+Admin). `doiSoatLuong` KHÔNG bắt được vì số chi **khớp đúng** bảng lương
+thật — khoản thưởng vô hình với mọi cổng hạ nguồn.
+
+Chú giải cũ tự bào chữa *"ở đây không có số tiền nào được gõ"* — **SAI**
+với `ghiNhan`. Đúng thứ luật kho cảnh báo: **một chú giải không khớp mã
+là một cái bẫy đã cài** (cùng lớp `V4 câm` của bộ tối ưu, `daGoNgoai`).
+
+Sửa: `ghiNhan` có **trần = `tranKpi`** — ceiling biến-thiên-lương của
+chính vị trí, do Super Admin đặt, người chốt không nống được. Một ghi
+nhận lớn hơn cả trần KPI một tháng thì không còn là "ghi nhận việc nhỏ"
+— nó là khoản chi thật, phải đi qua `duyetChi` + thang nấc. Chọn trần từ
+một số Super-Admin-đặt, không phải hằng gõ tay (hai bản ngưỡng lệch nhau
+thì một khoản lọt). Bộ thử worker: `ghiNhan:500tr` → `GHINHANVUOTTRAN`;
+phá thử (vô hiệu cổng) → đỏ. Chú giải "không qua thang nấc" nay nói rõ:
+phần đo được không có số gõ, phần gõ duy nhất (ghi nhận) đã có trần.
+
+### KHÔNG PHẢI LỖ · cứu hệ — đọc kỹ thì thiết kế đúng
+
+Tổ soi đợt một nghi ba chỗ ở `cuu-he.js`. Trace kỹ từng dòng thì cả ba
+là **thuộc tính thiết kế, không phải lỗ** — và nói ra điều đó cũng là
+một phần của "khắt khe": *không nịnh bằng xanh, cũng không bịa ra đỏ*.
+
+- **`baoDongCuuHe` không dùng phiên** — CỐ Ý (Super Admin thật không có
+  phiên khi hacker giữ hết). Hại duy nhất kẻ ẩn danh gây được là spam
+  email/log — DoS-cận, ngoài phạm vi; và nó KHÔNG cấp quyền gì (token
+  chỉ đi qua email, vẫn cần `GITA_KHOA_CUU` offline). Thêm phiên vào là
+  **phá đúng công dụng** cửa ấy.
+- **`dongBangHe` không khoá riêng tài khoản R01** — đóng băng chặn MỌI
+  cửa ghi toàn hệ (mặc-định-từ-chối), nên hacker đăng nhập lại bằng mật
+  khẩu mới cũng không ghi được gì tới khi `truyHoiHe` đặt lại mật khẩu.
+  Khoá thêm một dòng tài khoản là thừa.
+- **`dongBangHe` không tiêu token** — CỐ Ý: cùng token dùng tiếp cho
+  `truyHoiHe` giữa cơn sự cố (không lấy token mới dễ lúc ấy); `truyHoiHe`
+  mới đánh dấu `daDung` ở cuối. Cả hai bước đòi `GITA_KHOA_CUU` offline
+  mà hacker không có.
+
+### Bài học đợt hai
+
+> **Bề mặt đắt nhất không phải màn mới — nó là cổng cũ ai cũng tin đã
+> đúng.** Hai lỗ thật đều ở mã chạy nhiều bản: một bộ dò tên "đã có từ
+> 9.99.62", một cửa lương "đã chốt". Soi đối kháng phải chĩa vào **chỗ
+> hậu quả cao nhất**, không chĩa vào chỗ mới nhất — và phải CHẠY THẬT
+> (regex, cửa worker), không đọc mã đoán.
+
+## SOI ĐỐI KHÁNG ĐỢT BA · BỐN — BỊT LỖ RỒI DỰNG PHÉP ĐO HÀNH VI (9.99.112)
+
+Chủ hệ: *"100 trợ lý chất vấn nhau… soi từng câu từ, từng quy trình…
+chỗ nào còn lỗi phải làm lại ngay"* — hai đợt thanh tra ma-trận-vai và
+vòng-đời trên **mọi vị trí tài khoản**. Kết: mười hai lỗ, phần lớn là
+**cổng cũ ai cũng tin đã đúng** (đúng bài học đợt hai). Bản này bịt hết
+và — quan trọng hơn — dựng **phép đo HÀNH VI** cho từng lỗ ở
+`thu-worker.js` mục **24**, mỗi cái đã PHÁ THỬ đỏ đúng chỗ.
+
+### Sáu lỗ HIGH, và vì sao cả sáu sống lâu
+
+| Lỗ | Cửa | Sai thế nào |
+|---|---|---|
+| A | `chung-cu` (ký·xác nhận·soi) | nằm trong CAN_PHIEN nhưng **không kiểm vai** — khách R13 ký được, Coach nắm tài khoản khách TỰ XÁC NHẬN chứng cứ của mình |
+| B | `traBoSung` | chỉ chặn ở tầng phiên — khách đọc được nội dung NGHỀ (camNang·ungPho) |
+| C1 | `capLenhGiamSat` | cổng "không tự cấp" so chuỗi thô `choAi===hoSo.u`, **bỏ sót khi khai bằng EMAIL** |
+| C2 | `capQuyenTaiChinh` | cùng lỗ email — tự cấp được cửa **ký TIỀN** cho mình |
+| D | `docTheVungManh` | rút đồng ý chỉ chặn TẠO thẻ; cửa ĐỌC vẫn trả D4 (nỗi sợ nguyên văn của trẻ) sau khi cha mẹ đã rút |
+| E | `danhDauXoa` trongSo | chỉ UPDATE một mốc rồi khai "đã xoá trong hệ" — **KHÔNG xoá một bản ghi con nào** |
+
+**C1·C2 là cùng một lớp lỗi `hoSo.username`/`hoSo.vai`/`maKhachHang`**
+(9.99.55·62·75): so định danh bằng **chuỗi thô một vế** thì email của
+chính mình lọt. Chữa bằng `Kho.layUid()` — quy mọi hình (id·username·
+email) về `users.id` rồi so, luật 9.99.84 "so hai đầu, một đầu từ chỗ
+khác". Cổng thô GIỮ LẠI làm lớp nhanh; cổng canonical đứng SAU khi tra
+được người.
+
+**D·E là cùng luật `daGoNgoai`/`den`/`conHan`**: một ô/cửa khai một
+việc mà KHÔNG làm việc ấy là **một lời nói dối mang dấu hệ thống**. E
+nặng nhất — cha mẹ được báo "đã xoá" trong khi D4 vẫn đọc được, phạm
+quyền xoá Luật 91 với đúng loại dữ liệu bảo vệ đặc biệt. Nay trongSo
+`DELETE` thật ba bảng con (theVungManh·hoSoSongSinh·soCham) rồi ĐẾM
+dòng còn lại — con số ấy MỚI làm nó thành phép đo.
+
+### Lỗ CRITICAL: latest-row-wins không có mốc đơn điệu
+
+`docCheDoBao`/`docDongYAnhCon` đọc `ORDER BY ghiLuc DESC LIMIT 1`, mà
+`ghiLuc` là chuỗi ISO mili-giây. Ký rồi rút trong CÙNG mili-giây thì
+thứ tự resolve TÙY Ý — một nhà đã RÚT có thể đọc ra ĐANG CÓ. Thêm
+`, rowid DESC` (và `, rowid ASC` cho các state-fold đọc xuôi:
+bang-gia·dongYDuLieu·yeuCauXoa·baCuaConNguoi·luotPrompt·ghimCon).
+Cùng lớp lỗi flaky-theo-ngày ở `thu-worker` — **đỏ THỈNH THOẢNG là lớp
+tệ nhất**, vì chạy lại cho qua tới hôm đỏ vì lý do thật cũng chạy lại
+cho qua nốt.
+
+### F-1: điều phối 100 trợ lý là TẤM ÁP PHÍCH (đã sửa 9.99.110, giữ ghi)
+
+`dieuPhoiTroLy` bản đầu nhận bừa mọi chuỗi, khai "đã định tuyến" kể cả
+cửa không tồn tại. Đã sửa FALSIFIABLE ở 9.99.110 (đối chiếu `khoaSoHuu`
+với CAN_PHIEN thật → `KHONGCUA`); bản này chỉ xoá nốt câu `vi:` còn tự
+xưng "do đúng một trợ lý sở hữu" — một lời khai không kiểm được.
+
+### Lỗ MEDIUM cùng đợt
+
+- **`kien-truc-thi-giac` cổng ADN** dò biên bằng space/comma/period —
+  gói dấu hiệu vào dấu câu khác là lọt. Nay biên Unicode
+  `(?<![\p{L}\p{N}])…(?![\p{L}\p{N}])`. Và roster người xem thiếu
+  `DOITAC` (5→6).
+- **`tai-chinh-ceo` S1 tiền mặt** không trừ `hoanTien`·`hoaHongTra` đã
+  chi ra — thổi số dư. Nay trừ, và cửa sổ 3 tháng gồm cả hai khoản ra.
+- **`ngan-hang` đối chiếu** chỉ soi tiền VÀO; thêm nhánh tiền RA
+  (raChuaKhop·chiChuaKhop) — chi không chứng từ là chỗ mất tiền.
+- **`cuu-he` soatCuuHe** thiếu cổng vai → thêm R01–R02.
+- **`coach-kh`** nhận cả R13–R15 (khách) vào cổng coach → siết R01–R12.
+- **`noi-dung-tiep-thi` QC1** dò `'số 1'` trần bắt oan "số 1 trong danh
+  sách" → đổi sang cụm ngữ cảnh ("số 1 việt nam"·"số 1 thế giới"…).
+
+### Phép đo HÀNH VI — mục 24, cả sáu ĐÃ PHÁ THỬ
+
+Mỗi lỗ HIGH một phép đo gọi THẬT vào cửa qua Worker thật (không đọc mã
+đoán), và mỗi cái đã bị phá thử để xem có đỏ đúng chỗ: gỡ cổng A→R13 ký
+được; gỡ B→khách thấy camNang; gỡ canonical C1/C2→tự cấp qua email
+thành công; gỡ cổng D→D4 vẫn đọc sau khi rút; gỡ DELETE E→conLai=1 và
+thẻ vẫn đọc được. **Test tự-cấp CỐ Ý dùng tài khoản email≠username** —
+nếu dùng tài khoản thường (email=username) thì phép đo dừng ở cổng thô,
+KHÔNG chạm cổng canonical, và bản sửa 9.99.112 sẽ không được canh. Đúng
+lỗi "V5 chỉ thử Nguyễn, cổng để lọt họ Đ" ở 9.99.111: **một phép kiểm
+phải chạm ĐÚNG chỗ nó canh, không chạm chỗ dễ hơn.**
+
+### Sửa xong stale self-claim
+
+- `data.qa.js` khai "16/50 ô máy đo" từ 9.99.81, mà C3·C5·C9 thêm mười
+  hai ô (9.99.82) chưa sync → thật là **28/50** (đếm được:
+  `grep -cE "m:[0-9]+,mayDo:'"` = 28; `grep -c 'mayDo:'` trần ra 30 vì
+  đếm cả chú giải+chuỗi). Nay prose khai 28/50·22/50 kèm cách đếm ĐÚNG.
+- `kiem-tra.js` header ghi "759 phép đo" — thật là **1045** (con số
+  cuối mỗi lượt là con số thật).
+
+Ba bộ kiểm xanh sau rebuild: kiem-tra 1045 · ra-soat sạch ·
+do-khung-man 1660 (4 khổ) · thu-worker toàn bộ đạt (thêm 14 phép đo
+hành vi mục 24). soi-doi-kho: 0 biến mất.
+
+## SOI ĐỐI KHÁNG ĐỢT 3 — SÁU TRỢ LÝ, VỊ TRÍ NHÀ TOÁN HỌC MUA 10 TRIỆU USD (9.99.113)
+
+Chủ hệ: *"thanh tra đợt 3 nghiêm ngặt gấp 100 lần… làm việc ở vị trí
+khách hàng khó tính nhất là một nhà toán học quốc tế trước khi mua bản
+quyền 10 triệu USD."* Sáu trợ lý thanh tra độc lập soi sáu bề mặt hậu quả
+cao nhất, mỗi trợ lý CHẠY THẬT (không đọc mã đoán), chỉ báo lỗi ĐÃ XÁC
+MINH. Kết: **flagship (tài chính · điều phối · ba chuỗi duyệt · tự nâng
+cấp · cổng tự cấp) đều THẬT, phá-thử-đỏ-được** — nhưng còn hai lỗ
+CRITICAL ở đúng cổng ai cũng tin đã đúng, cộng một chuỗi lỗ HIGH/MEDIUM.
+Mỗi cái nay có phép đo phá-thử-được.
+
+### Hai CRITICAL — cùng ở soatRaNgoai, cổng DUY NHẤT chặn dữ liệu ra ngoài
+
+Bộ dò ẩn danh (Điều 13 · Luật 91) bị né bằng hai phép biến hình vô hình,
+chứng minh bằng chạy regex thật:
+- **Ký tự vô hình** (zero-width U+200B–200D · U+2060 · BOM · RTL-override ·
+  U+034F) chèn giữa tên/số → `\s`,`\d` không thấy → "Ng⁠uyễn Thị Lan"
+  ra `sach:true`, đi thẳng bộ tạo ảnh nước ngoài, người nhận đọc tên bình
+  thường. Chữa: **bỏ hẳn `\p{Cf}`+U+034F** trước khi dò.
+- **Chữ số toàn-rộng** `０-９` không khớp `\d`, NFC không gộp → số điện
+  thoại/CCCD trẻ con lọt. Chữa: chuẩn hoá **NFKC** (không NFC).
+
+Và một lỗ HIGH cùng chỗ: **họ hiếm** (Trịnh · Đào · Vương · Tống…) ngoài
+danh sách ~25 họ, không kèm dấu hiệu trẻ, lọt AD-TEN. Mở rộng HO_VIET.
+
+**Cái bẫy khi sửa, ghi lại:** thêm `\s*` cho zero-width-separator +
+giữ cờ `i` làm `\p{Lu}` khớp CẢ chữ thường → "hứa điểm", "lên" (họ mới +
+từ thường liền sau) bị bắt oan, và bộ thử SẬP. Sửa đúng: khớp HỌ **dạng
+viết hoa** (tên thật Titlecase; cụm thường thì không), **bỏ cờ i**, và
+quét trên HAI bản — bản-bỏ-vô-hình bắt vô hình GIỮA từ, bản-thay-cách bắt
+vô hình GIỮA hai từ. 0 lọt · 0 bắt oan trên "Hà Nội"·"Bảng Lương"·"Con
+đường"·tiêu đề Title-Case.
+
+### Bốn HIGH ở cổng cũ
+
+- **`ngan-hang` đối chiếu chiều RA** so `ngayChi` (ISO đầy đủ) với bound
+  đã cắt còn ngày → **rớt mọi khoản chi ngày cuối kỳ**, và một khoản bịa
+  đề cuối tháng né đúng cửa "tiền ra không chứng từ". Chữa: cắt cả hai vế
+  về ngày (`substr(…,1,10)` hai phía).
+- **`kien-truc-noi-dung` dùng `hoSo.username`** (16 chỗ) — phiên thật là
+  `hoSo.u`, nên **cả hệ duyệt nội dung năm cổng CHẾT trong sản xuất**
+  (capQuyenNoiDung 500, kyBai từ chối biên tập có quyền thật, audit ghi
+  tên trống), cổng tự-cấp là mã chết, và **bộ thử XANH GIẢ** vì gọi cửa
+  bằng `ai={username:…}` — hình phiên khách không bao giờ gửi. Chữa:
+  `hoSo.username`→`hoSo.u` + tự-cấp so định danh chính tắc (`layUid`) +
+  quyenKy tra không-phân-hoa-thường + **sửa bộ thử dùng `u:` (hình phiên
+  thật)** để nó ĐỎ được khi lỗi quay lại (phá thử xác nhận).
+- **`con-duong` mốc SVG `role=button` chết bàn phím** — focus được, đọc
+  ra "button", mà Enter/Space không kích onclick trên thẻ phi-gốc. Trên
+  đúng màn 3D. Chữa: `data-moc` uỷ nhiệm + polyfill Enter/Space cho mọi
+  role=button phi-gốc ở app.js (phát click nổi bọt).
+- (cùng lớp `hoSo.username`/`.vai`/`maKhachHang` 9.99.55·62·75 — lần thứ năm)
+
+### Ba MEDIUM
+
+- **S7 tự giới thiệu luôn 0%** vì `boTro` không có trong SELECT — một
+  phép đo hỏng đọc ra như 0% thật. Chữa: thêm `boTro`.
+- **`theVungManh` ×4 đọc "dòng mới nhất" thiếu rowid tiebreak** (đợt
+  9.99.112 bỏ sót) → cùng mili-giây phục vụ thẻ CŨ (nỗi sợ trẻ đã thay).
+  Chữa: `, rowid DESC`.
+- **onclick dựng từ dữ liệu đã `h()`** (sai ngữ cảnh JS-string) ở
+  con-duong đã chuyển data-*; bốn màn còn lại (hom-nay·studio·nhan-vat·
+  bang-gia) dữ liệu ASCII tĩnh nên chưa khai thác được — mục chờ, không
+  phải lỗ.
+
+### Ba RĂNG TĨNH mới — mục 113, phá-thử-đỏ-được
+
+- **113a** mọi đọc `(ghiLuc|lapLuc) DESC LIMIT 1` trong `may-chu/` phải
+  kèm `rowid` (bắt được theVungManh + chặn tái phạm). Bẫy khi viết:
+  `LIMIT 1` dính `LIMIT 100` → chốt `(?![0-9])`; và một đọc ĐÃ vá có
+  ", rowid" chen giữa nên reFold không khớp — đếm thẳng reFold LÀ đếm chỗ
+  thiếu, không trừ.
+- **113b** `soatRaNgoai` phải có `\p{Cf}` strip + `NFKC`.
+- **113c** mốc Con đường qua `data-moc` (không onclick) + app.js có
+  polyfill role=button.
+
+### Điều đáng giữ nhất từ đợt 3
+
+> **Bề mặt đắt nhất là cổng cũ ai cũng tin đã đúng.** Cả hai CRITICAL ở
+> `soatRaNgoai` "đã có từ 9.99.62"; lỗ hệ-duyệt-nội-dung ở `hoSo.username`
+> mà bộ thử XANH GIẢ suốt vì gọi cửa bằng hình phiên giả. Một phép đo chỉ
+> thật khi nó đi qua ĐÚNG đường sản xuất (kiemPhien → hoSo.u), không phải
+> một hình phiên dựng cho vừa bài thử.
+
+Xanh sau rebuild: kiem-tra (thêm mục 113) · ra-soat sạch · do-khung-man
+(4 khổ) · thu-worker toàn bộ đạt (thêm mục 24 evasions + mục 25 tài
+chính). soi-doi-kho: 0 biến mất.
+
+## SOI ĐỐI KHÁNG ĐỢT 4 — BẢY TRỢ LÝ $500M, BỊT TÁM LỖ ĐÃ XÁC MINH (9.99.114)
+
+Bảy tổ thanh tra độc lập cấp $500M (bộ não · 100 trợ lý · tài chính ·
+dữ liệu-pháp lý · chất lượng sản phẩm · kiến trúc · giao diện) chất vấn
+toàn hệ, mỗi lỗ CHẠY THẬT rồi mới báo. Bản này bịt **tám lỗ đã xác
+minh**, mỗi cái kèm phép đo hành vi ĐÃ PHÁ THỬ. Ba tổ độc lập chỉ CÙNG
+một lỗ nặng nhất — cổng ẩn danh Điều 13.
+
+### 1 · CRITICAL — cổng ẩn danh Điều 13 lọt tên trẻ SÁU cách (ba tổ cùng bắt)
+
+`soatRaNgoai` bản 9.99.113 mới vá `\b`+zero-width+toàn-rộng, nhưng CHẠY
+THẬT vẫn lọt: (a) tên **TOÀN HOA** kèm dấu hiệu trẻ ("bé tên NGUYỄN VĂN
+AN" — bản cũ chỉ bắt Titlecase); (b) **họ dễ trùng** bỏ khỏi HO_VIET
+("Lương Gia Bảo hay khóc"); (c) **homoglyph** Cyrillic/Greek ("Нguyễn",
+NFKC không gộp); (d) **dấu tổ hợp chèn** ("Nguyễn"+U+0301); (e) **tên
+gọi không họ** + trạng thái trẻ ("Minh Anh sợ"). Mỗi câu là một tên trẻ
+đi thẳng ra bộ tạo ảnh nước ngoài — Điều 13 **bất khả sửa** + Luật 91.
+
+Sáu lưới mới: HO_HIEM + **đệm-gate** (chặn "Hà Bảo Anh", qua "Hà Nội
+mùa" vì Nội không phải đệm — chọn dấu hiệu, không danh sách trừ);
+`capHo()` đưa dạng TOÀN HOA vào alternation; **gộp confusable** +
+**AD-TRON** (token trộn hai bảng chữ — lưới chung, không cần biết trước
+chữ nào); **bản bỏ dấu + đệm** bắt dấu chèn và tên La-tinh hoá; AD-TREVE
+(tên + dấu hiệu trẻ quan sát được).
+
+> **V5 chỉ thử "Nguyễn"+"Đặng" (cả hai trong danh sách) nên XANH suốt
+> nhiều bản trên đúng lỗ nó canh.** Nay V5 thử đủ sáu cách; mục 113b đòi
+> `CHU_TRON`+`AD-TRON`+`boDauMark`+`NT_TEN`. Phá thử: về Titlecase-only
+> → nhiều câu lọt, V5 và mục 24 đỏ.
+
+### 2 · CRITICAL — IDOR: phụ huynh thao tác được dữ liệu con NGƯỜI KHÁC
+
+`ghiDongY`/`docDongY`/`yeuCauXoaDuLieu` nhận `maNha` từ THÂN yêu cầu, không
+đối chiếu `hoSo.maKhachHang`. Một phụ huynh gõ mã nhà khác là **forge/rút
+đồng ý** hoặc **mở đồng hồ xoá** cho con người lạ. Gốc: phiên KHÔNG mang
+`maKhachHang` (chỉ có ở đáp ứng đăng nhập). Nay `kiemPhien` thêm
+`maKhachHang`+`portal`; `nhaCuaMinh()` siết phụ huynh về đúng nhà mình,
+nhân viên R01–R12 giữ phạm vi rộng. Phá thử: gỡ `nhaCuaMinh` → mục 24 đỏ.
+
+### 3 · HIGH — xoá dữ liệu bỏ sót TÊN THẬT ở `students`
+
+`danhDauXoa` xoá theVungManh/hoSoSongSinh/soCham nhưng **`students.hoTen`
+(tên thật con) sống sót**. Nay gỡ PII (hoTen·lop·tinh) + đặt `deletedAt`
+theo `phuHuynhId` của nhà ấy, và đếm tên còn sót vào `conLai` (thành phép
+đo). Phá thử: bỏ khối UPDATE students → E2 đỏ.
+
+### 4–8 · Tài chính (tổ $500M chạy thật trên node:sqlite)
+
+- **heSoCua** thiếu rowid tiebreak → lương resolve tùy ý cùng mốc. Thêm
+  `rowid DESC`; mục 113a canh thêm `datLuc`/`ngay`.
+- **soCham** `ORDER BY ngay DESC` (ngày-thô) lái đèn đỏ tùy ý → `+rowid`.
+- **toiUuHoa** trả HẠT GIỐNG phạm ràng buộc CỨNG là `ok:true` (kế hoạch
+  cần 12 người dạy) → kiểm `tot.phamCung` trước khi trả, nói KHÔNG GIẢI
+  ĐƯỢC. Phá thử: bỏ kiểm → đỏ.
+- **S3 doanh thu tháng** group UTC, sổ dùng giờ VN → CEO và bao-cao lệch
+  bảy tiếng ở mép tháng. `datetime(ghiLuc,'+7 hours')`. Phá thử: về UTC →
+  chênh 7tr thành 9tr, đỏ.
+- **Đối chiếu ngân hàng chiều RA** chỉ union chiPhi → hoàn/hoa hồng bịa
+  vô hình với phép kiểm ngoài duy nhất. Union cả ba kênh (idChiPhi dùng
+  chung). Phá thử: bỏ hai nhánh → khoản bịa biến mất.
+
+### Việc lớn còn để lại (mandatory upgrade, chưa dựng trong bản này)
+
+Các tổ nêu, và đây là nợ kiến trúc THẬT, ghi thẳng để không ai tưởng đã
+xong: **db.batch (giao dịch nguyên tử)** cho cứu-hệ/xoá/mọi cửa nhiều-ghi
+(recovery + erasure half-apply được); **khoá ngoại + bộ dời lược đồ**
+(`wrangler d1 migrations`); **xoay khoá `GITA_KHOA_KHO`** (mất là mất
+1.131 kho); **tiền số nguyên đồng** (REAL trôi + so bằng nhau rớt khớp);
+**thang chữ ký theo SỐ TIỀN cho hoàn/hoa hồng/lương** (nay 1 chữ ký so
+với 3 của chi trực tiếp cùng cỡ); **ghi đồng ý lúc đăng ký** (ba ô hiện
+bị bỏ); **cửa xuất dữ liệu (Art 15/20)** · **purge theo hạn lưu** ·
+**HMAC sổ audit** · **mã hoá cột con nhạy cảm**; và bề mặt khách:
+**153 ô nhập thiếu nhãn đọc được** · **đường tiếng Anh mới phủ ~51 chuỗi
+vỏ** · **toast thiếu aria-live**. Đây là các mục cấp-tổ-chức, mỗi cái cần
+bộ phá thử riêng — không one-shot được mà không rủi ro cổng xanh.
+
+Xanh sau rebuild: kiem-tra 1048 · ra-soat sạch · do-khung-man 1660 (4 khổ)
+· thu-worker toàn bộ đạt (mục 24 thêm 6 lớp né ẩn danh + IDOR + E2 xoá
+students; mục tài chính thêm toiUuHoa/S3/đối-chiếu-ba-kênh). soi-doi-kho:
+0 biến mất.
+
+## DEPLOY WEB — SỬA LỖI THẬT: WORKFLOW QUÊN gita-app.js (9.99.115)
+
+`index.html` nạp thẳng `<script src="gita-app.js">` (bản gộp 1,4MB của
+src/), nhưng `trang-web.yml` chỉ copy `src/` mà **không copy gita-app.js**
+— nên trang đưa lên GitHub Pages sẽ TRẮNG (gita-app.js 404, `G` không tồn
+tại). Lỗi chưa lộ vì kho **chưa từng đẩy lên** nên workflow chưa chạy lần
+nào. Nay copy gita-app.js vào `trang/`, và thêm nó vào `paths` kích hoạt.
+
+> **Một workflow chưa chạy lần nào là một workflow chưa được kiểm.** Chỗ
+> hỏng chỉ lộ khi có người thật đẩy và mở trang — nên phải đọc `index.html`
+> xem nó NẠP gì, không tin danh sách copy là đủ.
+
+## GIAO DỊCH NGUYÊN TỬ — db.batch CHO CỨU HỆ · XOÁ DỮ LIỆU (9.99.116)
+
+Đợt thanh tra $500M (9.99.114) xếp **#1 nợ kiến trúc**: các cửa nhiều-ghi
+chạy 4+N câu `.run()` RỜI NHAU, không giao dịch. Worker hết giờ hay sập
+GIỮA CHỪNG thì ghi nửa vời — và đúng hai cửa nguy nhất:
+
+- **Xoá dữ liệu con** (`danhDauXoa` · phap-ly-rui-ro.js): xoá 3 bảng con +
+  gỡ PII `students` + đóng dấu `yeuCauXoa`. Nửa vời = PII con còn sống mà
+  đã đóng dấu "đã xoá" — một *lời nói dối mang dấu hệ thống*, phạm quyền
+  xoá Luật 91 với đúng loại dữ liệu bảo vệ đặc biệt.
+- **Cứu hệ** (`truyHoiHe` · cuu-he.js): đặt lại mật khẩu R01 + đá mọi phiên
+  + đánh dấu token + ghi sổ. Nửa vời = token đánh dấu đã dùng trong khi mật
+  khẩu CHƯA đổi → Super Admin thật **mất luôn đường vào**, đúng lúc gay
+  nhất. `dongBangHe` và `moBangHe` cùng lớp.
+
+Kho dùng `db.prepare` 394 chỗ, **chưa hề dùng `db.batch`** — mà D1 có
+`db.batch([...câu đã .bind()])` chạy nguyên tử (all-or-nothing). Nay bốn
+cửa trên gom các câu ghi vào MỘT `db.batch`.
+
+**Băm mật khẩu tính TRƯỚC (async) rồi mới dựng mảng** — batch nhận câu đã
+`.bind()` sẵn, không nhận `await` giữa chừng.
+
+### Shim bộ thử phải có batch — và thêm nó làm shim GIỐNG bản thật hơn
+
+`thu-worker.js` bọc node:sqlite bằng `dungD1`. Thêm `batch` (BEGIN → chạy
+từng câu → COMMIT; một câu ném thì ROLLBACK) **không** làm bộ thử lệch bản
+thật: `batch` là method D1 THẬT, có nó thì bộ thử canh đúng hành vi nguyên
+tử. Không có nó thì mọi cửa phải tự viết BEGIN/COMMIT tay — đúng lỗ nửa-
+chừng đợt thanh tra nêu.
+
+**Phá thử (mục 26 thu-worker):** batch có câu HỎNG ở giữa → phải ROLLBACK
+sạch câu tốt đứng trước (`còn 0 dòng`). Nếu batch không nguyên tử thì câu
+tốt đã commit → `còn 1 dòng` → đỏ. Một phép kiểm về giao dịch phải chứng
+minh được nó THẬT SỰ lăn ngược.
+
+### Ba nơi chạy, chỉ hai nơi cần batch
+
+Worker thật (`env.CSDL` = D1, có sẵn `.batch`) và bộ thử (đã thêm). Bản
+desktop (`may-chu.js`) chỉ phục vụ tệp tĩnh, **không chạy cửa backend**,
+nên không đụng. `kiem-tra.js` mục 104 kiểm cứu hệ bằng **soi tĩnh** (đọc
+mã + đọc `G.CUU_*`), không chạy cửa — restructure giữ nguyên `ghiSoDenNoiBo`
+nên các check tĩnh (ba bước ghi sổ băm) vẫn khớp.
+
+## THANG CHỮ KÝ THEO SỐ TIỀN — RÚT TIỀN (9.99.117)
+
+Đợt thanh tra $500M nêu: **hoàn tiền · hoa hồng · lương** là tiền RA khỏi
+Học viện, nhưng ba cửa duyệt chúng (`duyetHoan` · `traHoaHong` · `chotLuong`)
+chỉ đòi **R01–R03 BẤT KỂ số tiền**. Một Giám đốc R03 duyệt một khoản hoàn
+90 triệu bằng ĐÚNG MỘT chữ ký — trong khi **chi trực tiếp** 90 triệu đòi
+Super Admin (mốc C5, hai chữ ký). Đường rút tiền lớn không ai đủ thẩm quyền
+nhìn, và `doiSoatLuong`/đối chiếu không bắt được vì số tiền KHỚP sổ.
+
+**Đóng lỗ bằng cách DÙNG LẠI đúng thang `MOC_CHU_KY` đã chốt — KHÔNG đặt
+ngưỡng mới.** `chi-tieu.js` xuất `capDuyetTheoTien(soTien)`: cấp người duyệt
+một khoản rút tính theo chính số tiền của nó (như một mốc chu kỳ). Dưới
+10tr giữ R01–R03; từ 10tr → R03, 20tr → R02, 80tr → R01. Ba cửa so
+`BAC[hoSo.role] <= bac`.
+
+Đây là Vùng Đỏ (ngưỡng tiền là quyết định chủ hệ), nhưng **trỏ vào thang
+đã chốt** thì không phải đặt ngưỡng mới — cùng lối `fin_view` dùng lại câu
+trả lời sẵn có (9.99.67).
+
+**Hai chỗ cố ý KHÔNG chặn cứng:**
+- `duyetHoan` chỉ áp gate khi **DUYỆT** — từ chối thì cấp nào cũng được
+  (chặn tiền ra là an toàn).
+- `chotLuong` cho `quanLyPhong` (kế toán trưởng) chốt dù lv>3 — gate rank
+  chỉ áp cho người KHÔNG phải quản lý phòng, để không chặn nhầm đường uỷ
+  nhiệm hợp lệ. Phần người chốt gõ tay (`ghiNhan`) đã bị trần `tranKpi`
+  riêng (9.99.111), nên phần rủi ro nhất của lương lớn đã được canh.
+
+**Phá thử (mục 25c thu-worker):** R03 duyệt hoàn 90tr → `CANCAPCAOHON`;
+R01 duyệt 90tr → được; R03 duyệt 2tr → được (gate KHÔNG bắt oan khoản nhỏ).
+Cả ba đỏ được đúng chỗ nếu gỡ gate.
+
+**Còn để lại (chu kỳ sau):** `chotLuong` ghi bảng lương RỒI ghi khoản chi
+bằng HAI câu rời — chú giải cũ (dòng ~504) nói *"D1 không gói hai lượt ghi
+vào một giao dịch"*, nay SAI vì đã có `db.batch` (9.99.116). Nguyên tử hoá
+hai ghi ấy đổi một triết lý thất-bại đã cố ý thiết kế (`doiSoatLuong` đối
+chiếu chỗ lệch), nên làm riêng, thận trọng — không nhồi chung.
+
+## GHI ĐỒNG Ý LÚC ĐĂNG KÝ — LUẬT 91 (9.99.118)
+
+Đợt thanh tra nêu: ba ô đồng ý ở màn đăng ký (điều khoản · dữ liệu gia đình
+· dữ liệu con) được kiểm CLIENT-SIDE nhưng **máy chủ bỏ qua hoàn toàn** —
+`dangKy` không đòi, không lưu. Hai hệ quả: một lượt gọi thẳng `dangKy` (không
+qua màn) đăng ký được mà không đồng ý gì; và **không có dòng nào chứng minh
+nhà đã đồng ý** lúc tranh chấp — đúng nghĩa vụ Luật 91 việc số 2.
+
+**Hai cổng, không schema mới:**
+- `dangKy` đòi hai ô BẮT BUỘC ở máy chủ (`dyDieuKhoan` · `dyDuLieuGiaDinh`)
+  — client-side là gợi ý, cổng thật ở máy chủ. Ô con (`dyDuLieuCon`) tuỳ, đã
+  có cổng riêng ở điểm tạo dữ liệu con (9.99.70), không đòi lại.
+- `kichHoat` GHI hai đồng ý vào `dongYDuLieu` cho maNha=maKH — cùng bảng,
+  cùng luật với cổng ký/rút (9.99.70), nên `docDongY` đọc lại được. Ghi bằng
+  `db.batch` cùng lúc đóng dấu `dangKyCho='xong'`: nguyên tử (9.99.116).
+
+**Vì sao ghi ở kichHoat, không ở dangKy:** maKhachHang chỉ ra đời lúc
+kichHoat. Mang cờ đồng ý từ dangKy sang kichHoat cần cột mới ở `dangKyCho`
+→ cần di dời lược đồ (kho chưa có cơ chế). Hai ô bắt buộc đã bị dangKy chặn
+ở máy chủ, nên tài khoản tới được kichHoat là tài khoản ĐÃ đồng ý — ghi
+thành fact với mốc kích hoạt là faithful. Giá trị `o` chuẩn
+(`O_DONGY_BAT_BUOC = ['dieuKhoan','duLieuGiaDinh']`) import từ
+`phap-ly-rui-ro.js`, không chép — khoá form mang tiền tố `dy`, `o` chuẩn bỏ
+tiền tố.
+
+**Phá thử (thu-worker):** thiếu `dyDuLieuGiaDinh` → `THIEUDONGY` (gỡ cổng thì
+đăng ký được mà không đồng ý); sau kichHoat, `dongYDuLieu` có đúng hai dòng
+`dieuKhoan` · `duLieuGiaDinh` (trước 9.99.118 KHÔNG ghi gì). HOSO_MOI của bộ
+thử thêm hai cờ đồng ý để luồng đăng ký hợp lệ vẫn qua.
+
+## CHỐT LƯƠNG NGUYÊN TỬ — TIỀN ĐỀ CŨ ĐÃ SAI (9.99.119)
+
+`chotLuong` ghi dòng `bangLuong` RỒI ghi khoản `chiPhi` bằng HAI câu rời, và
+chú giải (từ trước) tự bào chữa: *"D1 không gói hai lượt ghi vào một giao
+dịch, nên phải chọn chỗ hỏng"*. Bản đầu tô-lê-rát lỗi `chiPhi` (bắt
+`chiHong`, trả `chuaVaoSoChi`) và dựa `doiSoatLuong` vá sau.
+
+**Tiền đề ấy nay SAI:** `db.batch` (9.99.116) gói được hai ghi. Hai câu đi
+CÙNG một giao dịch — hoặc cả dòng lương lẫn khoản chi, hoặc không gì. `chiPhi`
+hỏng → cả batch lăn ngược → trả `GHIHONG`, không để lại dòng lương mồ côi.
+
+**`doiSoatLuong` GIỮ NGUYÊN, đổi vai:** từ "vá chỗ non-atomic" thành lớp
+phòng thủ cho lệch đến từ nguồn KHÁC (gõ tay, `huyChi`, dời lược đồ). Bộ thử
+của nó cắm lệch TRỰC TIẾP (INSERT/DELETE chiPhi tay), không qua `chotLuong`,
+nên đổi này không phá test nào; cơ chế atomic đã có phá thử ở mục 26.
+
+Lớp lỗi "chú giải không khớp mã": một tiền đề đúng lúc viết, sai từ khi có
+db.batch — một workaround dựng quanh một giới hạn đã biến mất là chỗ nợ nằm im.
+
+## QUYỀN TRUY CẬP — XUẤT DỮ LIỆU GIA ĐÌNH (9.99.120)
+
+Bộ ba Luật 91 nay đủ: **đồng ý** (9.99.118) · **xoá** (9.99.112/116) · và
+**truy cập/xuất** (bản này). Màn `phap-ly` ("Bảy quyền của nhà mình") đã ghi
+"đọc" là một trong bảy quyền, nhưng tới 9.99.119 nó chỉ là một DÒNG CHỮ —
+không cửa nào làm nó thật.
+
+Cửa `xuatDuLieuNha` (phap-ly-rui-ro.js) gom toàn bộ dữ liệu hệ giữ về một
+nhà — tài khoản · con · thẻ vùng mạnh · hồ sơ song sinh · sổ chăm · lịch sử
+đồng ý · yêu cầu xoá · phiếu thu · hoàn tiền — và trả về JSON.
+
+**Ba luật:**
+- **`nhaCuaMinh`** (9.99.114): chỉ CHA MẸ của chính nhà, hoặc R01–R12 xử lý
+  yêu cầu. Cha mẹ bỏ trống `maNha` → lấy nhà của PHIÊN; không mở được nhà
+  người khác dù truyền mã lạ (phá thử: `GITA-0002` → `NOPERM_NHA`).
+- **Không xuất bí mật**: `pwHash`/`pwSalt` bị loại khỏi phần tài khoản
+  (SELECT cột cụ thể). Phá thử dò `/pwHash|pwSalt/` trên bản xuất → phải
+  SẠCH. Một bản "toàn bộ dữ liệu" gồm băm mật khẩu là một chỗ rò.
+- **Ghi nhật ký** mỗi lượt (Luật 91 Điều 6: ai truy cập nhà nào) — phá thử
+  đếm `audit` có dòng `PL_XUAT_DULIEU`.
+
+**Giao diện = quyền ĐỌC, không phải lượt TẢI:** màn `phap-ly` thêm nút "Đọc
+dữ liệu nhà mình" gọi `G.goiMayChu('xuatDuLieuNha')` (KHÔNG fetch thẳng) và
+hiện tóm tắt + lịch sử đồng ý TẠI CHỖ, mọi ô qua `h()`. Không tạo tệp tải về
+— một quyền đọc khác một lượt tải, nên không đụng luật cấm khách tải dữ liệu.
+
+## NHÃN A11Y CHO Ô NHẬP — MỘT LỚP BÙ, KHÔNG 150 CHỖ VÁ (9.99.121)
+
+Đợt thanh tra nêu ~153 ô nhập thiếu tên đọc được cho trình đọc màn hình:
+người khiếm thị nghe "ô nhập, không tên". Dò ra: kho **không có hàm dựng ô
+chung** — 162 `<input>/<textarea>/<select>` gõ thẳng khắp ~20 màn (danh-gia ·
+tam-nhin · thu-vien · tro-ly · coach-kh · kien-truc-thi-giac …). Vá từng ô là
+150 chỗ dễ sót và dễ trôi lại.
+
+**Đường đúng: một lớp bù chạy sau MỖI render** — `G.a11yNhan(main)` trong
+`render()` (app.js). Mỗi ô chưa có tên đọc được được thêm `aria-label` theo
+chuỗi dự phòng: đã có tên (aria/label/title/bọc label) → giữ; **placeholder**
+→ **nhãn đứng ngay trước ô** → **generic theo loại**. KHÔNG xoá placeholder —
+chỉ THÊM aria-label, vì trình đọc màn cần TÊN ổn định còn placeholder biến mất
+khi gõ. Một chỗ, phủ mọi ô hiện có LẪN ô viết sau — đúng bài học "không dựng
+bản thứ hai": vá ở nguồn render, không rải 150 bản.
+
+**Đo được + chống tái phạm:** `do-khung-man` thêm phép đo a11y — quét mọi ô
+trên từng màn × khổ, đỏ nếu thấy ô không tên đọc được (placeholder KHÔNG
+tính). Phá thử: tắt `G.a11yNhan` → đỏ ~20 màn; bật → sạch (1660 lượt đo). Một
+lỗ a11y giờ là một dòng đỏ, không phải một phát hiện thanh tra sáu tháng/lần.
+
+## SOI ĐỐI KHÁNG BỘ NÃO — HAI LỖ RÒ TÊN TRẺ Ở soatRaNgoai (9.99.122)
+
+Tổ soi $500M vào bộ não + 100 trợ lý: `dieuPhoiTroLy`, `tuHoanThienTroLy`,
+cổng vai, thứ tự gate đều LÀNH (điều phối đã hết là áp-phích từ 9.99.110).
+Nhưng `soatRaNgoai` — cổng DUY NHẤT chặn dữ liệu người rời hệ (Điều 13 bất
+khả sửa) — còn HAI lỗ, xác minh bằng CHẠY THẬT:
+
+**1. CRITICAL — bộ dò tên MÙ CHỮ THƯỜNG.** Mọi lưới AD-TEN đòi chữ hoa đầu
+(`NT_TEN=\p{Lu}…`, `capHo` Titlecase/HOA). Tên gõ THƯỜNG hoặc tự-viết-hoa-
+một-chữ lọt sạch: "con nguyễn văn an", "Nguyễn văn an, 8 tuổi", "mẹ nguyễn
+thị hoa", "Họ tên con: nguyễn văn an" → `sach:true` → tên trẻ ra thẳng bộ
+tạo ảnh nước ngoài. Gõ thường là cách gõ THƯỜNG NHẤT trên điện thoại. Cùng
+bẫy đã gỡ cho HỌ ở 9.99.111 (V5 chỉ thử "Nguyễn"), nay tái ở HOA/THƯỜNG —
+V5 chỉ thử tên viết hoa nên câm.
+
+Vá: lưới **AD-TENTHUONG** — danh sách họ so KHÔNG phân biệt hoa/thường (cờ
+i, KHÔNG dùng `\p{Lu}` nên bẫy i→\p{Lu} của 9.99.113 không áp), buộc một
+**NEO NGƯỜI**: (A) dấu người/trẻ đứng TRƯỚC họ (`con·bé·mẹ·chị…` + SEP cho
+cả "con: nguyễn"), hoặc (B) họ+tên rồi dấu hiệu trẻ đứng SAU (tuổi·lớp·
+trạng thái). Neo người giữ "trần nhà"·"lê la"·"Hà Nội" (không neo) vẫn qua
+— "ngờ là đủ để chặn" đúng chiều mà không bắt oan brief lành.
+
+**2. MEDIUM — số điện thoại có ngoặc.** Lớp run `[\d\s.\-]` loại `()`, nên
+"(090) 123 4567" lọt. Thêm `()` vào lớp.
+
+**Phá thử (thu-worker mục 24):** bốn câu tên-thường + số ngoặc phải CHẶN
+(0/4 lọt); brief lành "trần nhà·hồ nước·lê la" phải QUA. Tắt AD-TENTHUONG
+→ bốn lọt, đỏ. Bài học lặp: một bộ dò chữ chỉ kiểm được biến thể nó ĐÃ
+THỬ — V5 phải thử CẢ chữ thường, không chỉ chữ hoa.
 
 ## Bộ tối ưu cấu hình gói (9.99.68)
 

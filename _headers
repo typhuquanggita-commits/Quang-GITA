@@ -14,8 +14,11 @@
   Permissions-Policy: microphone=(self), camera=(), geolocation=(), payment=(), usb=(), interest-cohort=()
   # Ép HTTPS trong hai năm, kể cả tên miền phụ
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
-  # Không cho máy quét và trình thu thập dữ liệu AI đưa vào chỉ mục
-  X-Robots-Tag: noindex, nofollow, noarchive, noimageindex
+  # KHÔNG đặt X-Robots-Tag noindex ở /* (9.99.146): trên GitHub Pages nó
+  # trơ, nhưng khi trang được đưa qua Cloudflare/Netlify thì header này
+  # ĐÈ thẻ index,follow trong index.html và gỡ TOÀN BỘ site khỏi tìm
+  # kiếm — chặn thẳng mục tiêu SEO. Trình thu thập AI đã bị chặn ở
+  # robots.txt (20 bot); noindex chỉ giữ ở /kho/* (nội dung riêng) dưới.
 
 # Kho đã mã hoá: không bao giờ được lưu ở proxy trung gian nào
 /kho/*

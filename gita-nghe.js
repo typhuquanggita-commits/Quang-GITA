@@ -589,6 +589,11 @@ G.VIEWS['cay-tien'] = function(){
   var o = U.ph({eyebrow:'NHÓM 05 · QUẢN TRỊ', ic:'seed', grad:1, t:'Cây tiền — hệ chăm sóc VIP và VVIP',
     lead:C.nguon.luan});
 
+  o += '<div class="card mb" style="border-color:rgba(248,113,113,.28)">'+
+    '<div class="row" style="gap:8px"><span style="color:#BE0E16">'+ic('shield','w-4 h-4')+'</span>'+
+    '<b style="color:#BE0E16">CHỈ NỘI BỘ QUẢN TRỊ — không bao giờ hiện cho khách hàng</b></div>'+
+    '<p class="tiny dim mt" style="line-height:1.65">Đây là cách Học viện NHÌN một gia đình để dồn nguồn lực đúng chỗ — điểm cây tiền, dòng tiền, phân hạng. Gia đình chỉ thấy <b>Cây giá trị</b>: cái con và nhà mình lớn lên qua năm tầng. Hai thứ khác nhau, và trộn lại là để khách thấy mình bị tính như một nguồn thu.</p></div>';
+
   o += '<div class="card mb" style="border-color:var(--gita-vien-1)">'+
     '<div class="row mb" style="gap:8px"><span style="color:var(--gold-ink)">'+ic('book','w-4 h-4')+'</span>'+
     '<b>Nguồn luận điểm</b></div>'+
@@ -597,6 +602,20 @@ G.VIEWS['cay-tien'] = function(){
     '<p class="sm mt"><b>'+h(C.nguon.bonViec)+'</b></p>'+
     '<div class="mt">'+U.list(C.nguon.chuong,'#5140B4')+'</div>'+
     '<p class="tiny muted mt" style="line-height:1.65">'+h(C.nguon.ghiChu)+'</p></div>';
+
+  o += U.sec('TÁM CHUẨN LẤY NGUYÊN TỪ SÁCH','Con số và mệnh đề của tác giả — dùng làm chuẩn để đo, không phải ý kiến để bàn.');
+  o += U.tbl(['Mã','Trang','Chuẩn','Nội dung'], C.nguon.chuanSach.map(function(s){
+    return [U.chip(s.ma,'#5140B4'), '<span class="tiny muted">'+h(s.trang)+'</span>',
+            '<b class="sm">'+h(s.ten)+'</b>', '<span class="tiny">'+h(s.noi)+'</span>'];
+  }));
+  o += '<div class="card mt" style="border-color:var(--gita-vien-1)">'+
+    '<div class="tiny up muted mb">BỐN CÁCH CHUYỂN SANG HƯỚNG DỊCH VỤ</div>'+
+    U.list(C.nguon.bonCach,'#5140B4')+'</div>';
+
+  o += '<div class="card mb" style="border-color:rgba(248,113,113,.28)">'+
+    '<div class="row mb" style="gap:8px"><span style="color:#BE0E16">'+ic('shield','w-4 h-4')+'</span>'+
+    '<b style="color:#BE0E16">GITA KHÔNG GHI GÌ — ranh giới dữ liệu trẻ em</b></div>'+
+    '<p class="sm dim" style="line-height:1.75">'+h(C.nguon.khongLay)+'</p></div>';
 
   o += U.sec('BỐN VIỆC, ĐỌC THEO GITA','Sách nói cho doanh nghiệp. GITA đọc lại cho một hệ đồng hành gia đình.');
   o += C.bonViec.map(function(b){
@@ -660,6 +679,30 @@ G.VIEWS['cay-tien'] = function(){
   o += '<div class="card"><div class="card pad-sm mb" style="border-color:var(--gita-vien-1)">'+
     '<p class="sm" style="line-height:1.75"><b>'+h(C.vongDoi.congThuc)+'</b></p></div>'+
     U.list(C.vongDoi.y,'var(--gita)')+'</div>';
+
+  /* BA ĐÒN DÒNG TIỀN — nội bộ quản trị. Dời từ màn khách (9.99.162) về
+     đúng chỗ: đây là cách Học viện thu, không phải thứ gia đình đọc về
+     mình. Mỗi đòn TRỎ một cửa vận hành đã có — không dựng bản thứ hai.
+     KHÔNG có đòn thứ tư "thu theo tuyến dưới": Điều 6 bất khả sửa cấm,
+     cửa máy chủ đã có răng (mục 115). */
+  o += U.sec('BA ĐÒN DÒNG TIỀN HỢP PHÁP','Cách dòng tiền GITA lớn lên — bằng GIÁ TRỊ và giới thiệu TRỰC TIẾP, không bao giờ theo tuyến dưới.');
+  o += '<div class="card mb" style="border-color:rgba(248,113,113,.28)">'+
+    '<div class="row" style="gap:8px"><span style="color:#BE0E16">'+ic('shield','w-4 h-4')+'</span>'+
+    '<b style="color:#BE0E16">Điều 6 · bất khả sửa</b></div>'+
+    '<p class="tiny dim mt" style="line-height:1.65">Không lấy người tuyến dưới làm nguồn thu. Đây là ranh giới phân biệt Học viện với đa cấp (BLHS 217a · NĐ 40/2018), và cửa máy chủ chặn cứng — không cửa nào nhận ô tuyenTrên/cấpDưới (mục 115).</p></div>';
+  o += C.donDongTien.map(function(d){
+    /* Cửa đích khoá khác nhau (bang-gia=fin_view · dai-su=ctv_hoa_hong ·
+       dong-hanh=mở). Vai xem cay-tien (pro_consult) mà KHÔNG mở được đích
+       thì nút dẫn vào cổng khoá — "mục chết" (9.99.101). Chỉ gắn data-v khi
+       G.allowed(đích); không thì hiện thẻ tĩnh, nói cần quyền gì. */
+    var mo = !G.allowed || G.allowed(d.v);
+    var dau = '<div class="row mb" style="gap:9px">'+U.dot(d.c)+'<b style="color:'+d.c+';font-size:14.5px">'+h(d.ten)+'</b>'+
+      '<span class="tiny muted" style="margin-left:auto">'+(mo?'Mở '+h(d.moTen)+' →':'cần quyền mở '+h(d.moTen))+'</span></div>'+
+      '<p class="tiny dim" style="line-height:1.6">'+h(d.y)+'</p>';
+    return mo
+      ? '<button class="card mb blk" data-v="'+h(d.v)+'" style="width:100%;text-align:left;border-color:'+d.c+'44;cursor:pointer">'+dau+'</button>'
+      : '<div class="card mb" style="border-color:'+d.c+'44">'+dau+'</div>';
+  }).join('');
   return o;
 };
 
@@ -1694,6 +1737,79 @@ on('[data-mbv]', function(el){ G.mtBangModal(el.getAttribute('data-mbv')); });
 var G = window.G || {}; window.G = G;
 G.VIEWS = G.VIEWS || {};
 
+/* TẦNG PHÒNG NGỪA RỦI RO (9.99.169) — thêm vào thẻ điểm theo yêu cầu chủ
+   hệ về "chủ động phòng ngừa rủi ro, an toàn tài chính–pháp luật" (tư
+   tưởng leading vs lagging của Kaplan & Norton: can thiệp bằng CHỈ BÁO
+   DẪN DẮT trước khi kết quả tài chính/pháp lý vỡ). Mỗi rủi ro TRỎ hệ đã
+   có — không dựng bộ phòng rủi ro thứ hai. `tro` là view THẬT (mục 115). */
+G.BSC_PHONGRUI = [
+  { rui:'Thất thoát tiền ra', dan:'Khoản rút lớn · chia nhỏ · chi không chứng từ',
+    phong:'Thang chữ ký theo tiền · chống chia nhỏ · đối chiếu ngân hàng 3 kênh', tro:'tai-chinh-ceo', troTen:'Bảy con số CEO' },
+  { rui:'Cạn tiền (runway)', dan:'Số tháng sống < 3 · tiền CỦA HỌC VIỆN âm',
+    phong:'S2 tính trên tiền của Học viện (không trên tổng) · báo động sớm', tro:'tai-chinh-ceo', troTen:'Bảy con số CEO' },
+  { rui:'Rò dữ liệu trẻ (Điều 13 bất khả sửa)', dan:'Tên/PII con lọt vào chuỗi rời hệ',
+    phong:'Cổng ẩn danh · chặn PII ra Sheets · nhật ký đọc', tro:'phap-ly', troTen:'Pháp lý & rủi ro' },
+  { rui:'Pháp lý (Luật 91 · hậu kiểm)', dan:'Chưa ghi đồng ý · chưa có đường xoá/xuất',
+    phong:'Bốn vùng luật sư mang câu hỏi cụ thể · hàng rào 10 điểm', tro:'phap-ly', troTen:'Pháp lý & rủi ro' },
+  { rui:'Lỗi hệ trước khi thành sự cố', dan:'Cổng kiểm đỏ · lỗ bảo mật mới',
+    phong:'Tổ 10 AI thanh tra 10 lượt/ngày · vòng tự hoàn thiện', tro:'tu-hoan-thien', troTen:'Vòng tự hoàn thiện' },
+  { rui:'Nhà rời bỏ (churn)', dan:'Đứt nhịp · hài lòng tụt · minh chứng thưa',
+    phong:'Đèn đỏ NGƯỜI gọi trong 24h · chỉ báo dẫn dắt ở hệ đo lường', tro:'do-luong-kh', troTen:'Hệ đo lường khách' },
+  { rui:'Giám sát vượt trần (rình người)', dan:'Cấp quyền không hạn · đo trẻ theo giây',
+    phong:'Trần giám sát 6 điều cấm · quyền có hạn tự thu hồi', tro:'giam-sat', troTen:'Trần giám sát' }
+];
+
+/* ═══ CHUẨN QUẢN TRỊ (9.99.170) ═══
+   Chủ hệ: "nghiên cứu các mô hình và xây chuẩn cho GITA", nhấn phát triển
+   BỀN VỮNG, chủ động phòng ngừa rủi ro, an toàn tài chính–pháp luật.
+
+   Đây là bản ĐỐI CHIẾU, không phải một hệ mới: mỗi mô hình quản trị GITA
+   đứng trên được gắn thẳng vào hệ ĐÃ CHẠY thi hành nó, và nói ra chỗ còn
+   hở. Vì sao cần một chuẩn viết ra: sáu tháng sau người dựng tiếp không
+   đọc hết ba mươi ngàn chữ chú giải — một chuẩn nêu TÊN mô hình + NGUỒN +
+   hệ thi hành thì họ đối chiếu được trước khi dựng, thay vì dựng một bản
+   thứ hai của một điều đã có (nguy nhất với một BẢNG hay một LUẬT).
+
+   Cố ý KHÔNG import ESG / Triple-Bottom-Line cho "bền vững": GITA là học
+   viện giáo dục gia đình, không phải công ty đại chúng. "Bền vững" ở đây
+   là NEO SỨ MỆNH (Hiến pháp bất khả sửa) + kỷ luật runway + Điều 6 không
+   đa cấp — dựng lại một khung ESG doanh nghiệp là bản thứ hai của một sự
+   thật đã có tên khác.
+
+   Mỗi ô `gita[].v` là view THẬT trong NAV — mục 120 đối chiếu hai đầu độc
+   lập (lời khai của kho ↔ G.NAV), đúng luật 9.99.84. `ho` nói thẳng chỗ
+   còn hở, kể cả khi đó là Vùng Đỏ chờ chủ hệ. */
+G.CHUAN_QT = [
+  { mo:'Thẻ điểm cân bằng', nguon:'Kaplan & Norton · HBR 1992 · sách 1996',
+    doi:'Đo CÂN BẰNG bốn tầng — Tài chính · Khách · Quy trình nội bộ · Học tập & phát triển — không chỉ nhìn tài chính.',
+    gita:[{v:'the-diem-can-bang',ten:'Thẻ điểm'},{v:'tai-chinh-ceo',ten:'Bảy con số CEO'},{v:'do-luong-kh',ten:'Hệ đo lường khách'}],
+    ho:'Đủ bốn tầng. Mỗi mục tiêu chưa đo được hiện thẳng "chưa có số", không bịa.' },
+  { mo:'Bản đồ chiến lược', nguon:'Kaplan & Norton · Strategy Maps 2004',
+    doi:'Chuỗi nhân quả từ Học tập → Quy trình → Khách → Tài chính; bắt mắt xích đứt, nối hư, và nhánh chạy vòng không tới tài chính.',
+    gita:[{v:'ban-do-chien-luoc',ten:'Bản đồ chiến lược'}],
+    ho:'clSoiChuoi bắt bốn lớp hỏng. Còn hở: một số mục tiêu chưa có đầu việc vai nào đẩy (clMucKhongCoViec nêu).' },
+  { mo:'Chỉ báo dẫn dắt vs kết quả', nguon:'Kaplan & Norton (leading vs lagging)',
+    doi:'Mỗi kết quả (lagging: tiền vỡ, nhà rời) phải có một chỉ báo DẪN DẮT báo TRƯỚC để can thiệp sớm.',
+    gita:[{v:'the-diem-can-bang',ten:'Tầng phòng rủi ro'},{v:'do-luong-kh',ten:'Chỉ báo dẫn dắt'}],
+    ho:'Bảy rủi ro đều có chỉ báo dẫn dắt. Chỉ số hài lòng/churn còn là LỜI KHAI kênh ngoài tới khi có sổ lượt dùng thật.' },
+  { mo:'Quản trị rủi ro doanh nghiệp (ERM)', nguon:'COSO ERM 2017 — Integrating with Strategy & Performance',
+    doi:'Sổ rủi ro gắn với chiến lược; mỗi rủi ro có CHỦ; khẩu vị rủi ro được khai; rủi ro xét cùng lúc với mục tiêu.',
+    gita:[{v:'the-diem-can-bang',ten:'Sổ rủi ro'},{v:'phap-ly',ten:'Pháp lý & rủi ro'},{v:'tai-chinh-ceo',ten:'Ngưỡng tài chính'},{v:'tu-hoan-thien',ten:'Ứng phó'}],
+    ho:'Khẩu vị rủi ro (risk appetite) chưa khai bằng SỐ — là Vùng Đỏ, chờ chủ hệ chốt từng ngưỡng.' },
+  { mo:'Ba tuyến phòng thủ', nguon:'IIA — Three Lines Model 2020',
+    doi:'Tuyến 1 người làm tự chịu (cổng nghiệp vụ); Tuyến 2 giám sát bằng kiểm soát; Tuyến 3 BẢO ĐẢM ĐỘC LẬP không nằm trong tuyến 1–2.',
+    gita:[{v:'tu-hoan-thien',ten:'Cổng ba chữ ký'},{v:'giam-sat',ten:'Trần giám sát'}],
+    ho:'Tuyến 1 = cổng ở máy chủ; Tuyến 2 = bộ kiểm (kiem-tra · do-ro-ri · soi-doi-kho); Tuyến 3 = tổ 10 AI thanh tra 10 lượt/ngày. Ba tuyến KHÁC người.' },
+  { mo:'Nguyên tắc & khung quản lý rủi ro', nguon:'ISO 31000:2018',
+    doi:'Quản lý rủi ro là QUÁ TRÌNH LẶP: mỗi rủi ro có chủ, có NHỊP xem lại, xem lại đều đặn không chờ sự cố.',
+    gita:[{v:'the-diem-can-bang',ten:'Nhịp xem lại'},{v:'phap-ly',ten:'Bốn vùng luật sư'}],
+    ho:'Mỗi rủi ro trỏ một chủ-hệ; nhịp xem lại phân tầng thời gian (CL_NHIP). Lặp bằng nhịp thanh tra 10 lượt/ngày.' },
+  { mo:'Neo sứ mệnh — phát triển bền vững', nguon:'Luật kho GITA (không phải mô hình ngoài)',
+    doi:'Mục tiêu tài chính KHÔNG được lấn sứ mệnh; tăng trưởng không đánh đổi bằng dữ liệu trẻ, bằng đa cấp, hay bằng cạn tiền của Học viện.',
+    gita:[{v:'bo-nao',ten:'Hiến pháp 13 điều'},{v:'con-nguoi',ten:'Chín điều bất khả sửa'},{v:'tai-chinh-ceo',ten:'Runway (tiền Học viện)'}],
+    ho:'Hiến pháp + chín điều bất khả sửa neo sứ mệnh; Điều 6 chặn đa cấp; S2 tính runway trên tiền CỦA HỌC VIỆN. Bền vững = ba neo ấy giữ được khi hệ lớn.' }
+];
+
 (function () {
   var U = G.U, h = U.h, ic = U.ic;
 
@@ -1960,6 +2076,37 @@ G.VIEWS = G.VIEWS || {};
       return '<div style="padding:8px 0;border-bottom:1px solid var(--gita-vien-2)">' +
         '<b class="sm">' + l.no + '. ' + h(l.t) + '</b>' +
         '<p class="tiny dim mt" style="line-height:1.7">' + h(l.y) + '</p></div>';
+    }).join('') + '</div>';
+
+    /* Tầng phòng ngừa rủi ro (9.99.169) — chủ động, an toàn tài chính·pháp
+       luật. Mỗi rủi ro có CHỈ BÁO DẪN DẮT báo TRƯỚC khi kết quả hỏng, và
+       trỏ hệ đã có (không dựng bộ phòng rủi ro thứ hai). */
+    o += U.sec('Chủ động phòng ngừa rủi ro — an toàn tài chính · pháp luật',
+      'Chỉ báo DẪN DẮT báo trước khi kết quả (lagging) vỡ. Can thiệp sớm, không chờ tài chính/pháp lý hỏng rồi mới sửa.');
+    o += '<div class="card">' + U.tbl(['Rủi ro', 'Chỉ báo dẫn dắt (báo trước)', 'Phòng bằng', 'Mở'],
+      (G.BSC_PHONGRUI || []).map(function (r) {
+        return [h(r.rui), '<span class="tiny">' + h(r.dan) + '</span>',
+          '<span class="tiny muted">' + h(r.phong) + '</span>',
+          '<button class="chip" data-v="' + h(r.tro) + '" style="cursor:pointer;border:1px solid var(--gita-vien-2)">' +
+            ic('shield', 'w-3 h-3') + h(r.troTen) + '</button>'];
+      })) + '</div>';
+
+    /* Chuẩn quản trị (9.99.170) — các mô hình GITA đứng trên, mỗi mô hình
+       TRỎ hệ đã thi hành nó (không dựng bản thứ hai). Đây là bản đối chiếu
+       để người dựng sau không dựng lại một điều đã có tên khác. */
+    o += U.sec('Chuẩn quản trị — các mô hình GITA đứng trên',
+      'Không phải hệ mới. Mỗi mô hình được gắn thẳng vào hệ ĐÃ CHẠY thi hành nó, và nói ra chỗ còn hở — ' +
+      'kể cả khi chỗ hở là Vùng Đỏ chờ anh chốt. "Bền vững" ở đây là neo sứ mệnh, không phải một khung ESG dựng thêm.');
+    o += '<div class="grid g2 mb">' + (G.CHUAN_QT || []).map(function (c) {
+      return '<div class="card">' +
+        '<div class="row wrap" style="gap:8px;align-items:baseline;margin-bottom:4px">' +
+        '<b class="sm">' + h(c.mo) + '</b><span class="tiny muted">' + h(c.nguon) + '</span></div>' +
+        '<p class="sm dim" style="line-height:1.8"><b>Đòi:</b> ' + h(c.doi) + '</p>' +
+        '<div class="row wrap mt" style="gap:6px">' + (c.gita || []).map(function (g2) {
+          return '<button class="chip" data-v="' + h(g2.v) + '" style="cursor:pointer;border:1px solid var(--gita-vien-2)">' +
+            ic('arrow', 'w-3 h-3') + h(g2.ten) + '</button>';
+        }).join('') + '</div>' +
+        '<p class="tiny mt" style="line-height:1.7;color:#0B7350"><b>GITA thi hành · còn hở:</b> ' + h(c.ho) + '</p></div>';
     }).join('') + '</div>';
     return o;
   };
@@ -7510,7 +7657,7 @@ G.VIEWS = G.VIEWS || {};
     var nhaMau = uuTien && uuTien.ds[0] ? uuTien.ds[0].nha : null;
     if (nhaMau) {
       var g = G.blvGoi(nhaMau.id, tenCoach);
-      o += U.sec('Gói tài nguyên trợ lý đã đóng sẵn — ' + h(nhaMau.nha),
+      o += U.sec('Gói tài nguyên trợ lý đã đóng sẵn — ' + nhaMau.nha,
         'Tám ô. Ô nào chưa có thì ghi là chưa có, không ẩn.');
       o += '<div class="card mb">' + (g.o || []).map(function (x) {
         return '<div style="padding:9px 0;border-bottom:1px solid var(--gita-vien-2)">' +
@@ -8103,7 +8250,7 @@ G.VIEWS = G.VIEWS || {};
     var mau = uu && uu.ds[0] ? uu.ds[0].nha : null;
     if (mau) {
       var g = G.tvbGoi(mau.id, ten);
-      o += U.sec('Gói tài liệu trợ lý đóng sẵn — ' + h(mau.nha),
+      o += U.sec('Gói tài liệu trợ lý đóng sẵn — ' + mau.nha,
         (G.TVB_GOI_LUAT || {}).cot || '');
       o += '<div class="card mb">' + (g.o || []).map(function (x) {
         return '<div style="padding:9px 0;border-bottom:1px solid var(--gita-vien-2)">' +
